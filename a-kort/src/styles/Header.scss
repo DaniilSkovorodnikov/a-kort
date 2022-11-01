@@ -1,0 +1,12 @@
+.site-nav{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  &__list{
+    margin-top: 20px;
+    display: flex;
+    gap: 90px;
+  }
+}
