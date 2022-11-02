@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add a project">
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/CategoryAdder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/styles/Header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add a menu changer and header">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/CategoryAdder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -48,23 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles" />
@@ -95,7 +86,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667309131489</updated>
-      <workItem from="1667309132697" duration="5476000" />
+      <workItem from="1667309132697" duration="6335000" />
+      <workItem from="1667376083473" duration="576000" />
+      <workItem from="1667399741045" duration="1752000" />
+      <workItem from="1667419242532" duration="6620000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -104,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667309780278</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add a menu changer and header">
+      <created>1667314963785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667314963785</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +124,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add a project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a project" />
+    <MESSAGE value="Add a menu changer and header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a menu changer and header" />
   </component>
 </project>

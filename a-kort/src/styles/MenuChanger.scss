@@ -31,13 +31,30 @@
 }
 
 .category-adder{
-  width: 60%;
-  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
   border: 1px solid black;
+  display: none;
+
+
+  &__content{
+    background-color: white;
+    box-sizing: border-box;
+    margin: auto;
+    width: 40%;
+    height: 165px;
+    padding: 25px;
+  }
 
   &__name{
     width: 95%;
+    height: 55px;
     margin: 0 auto;
+    padding: 18px;
   }
 
   &__add-btn{
@@ -45,7 +62,13 @@
     height: 45px;
     background-color: #717171;
     color: white;
+    margin: 18px auto 0 ;
   }
+}
+
+.active{
+  display: flex;
+  flex-direction: column;
 }
 
 .menu{
@@ -53,4 +76,89 @@
   height: 800px;
   margin-top: 25px;
   background-color: #d9d9d9;
+  border: 1px solid gray;
+}
+
+.category{
+  width: 90%;
+  margin: 40px auto 0;
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.dish-adder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+
+  .dish-characteristics{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
+    width: 60%;
+    height: 457px;
+    column-gap: 45px;
+    padding: 40px 60px 50px 45px;
+
+    &__left{
+      grid-column: 1;
+    }
+
+    &__right{
+      grid-column: 2;
+    }
+
+    &__photo{
+      width: 100%;
+      height: 282px;
+    }
+
+    &__numerical{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    &__price{
+      width: 30%;
+      height: 55px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    &__add-btn{
+      width: calc(60% + 2px);
+      height: 55px;
+      text-align: center;
+      font-size: 22px;
+      border: 1px solid lightgray;
+    }
+
+    &__name{
+      width: 100%;
+      height: 55px;
+      font-size: 22px;
+      padding: 0 18px;
+    }
+
+    &__desc{
+      width: 100%;
+      height: 290px;
+      margin-top: 20px;
+      vertical-align: top;
+      font-size: 18px;
+      padding: 0 18px;
+    }
+  }
 }

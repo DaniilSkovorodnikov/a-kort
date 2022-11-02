@@ -30,6 +30,13 @@ a{
 }
 
 button{
+  display: block;
   border: none;
   font-family: "Mulish", sans-serif;
+  cursor: pointer;
+}
+
+input{
+  box-sizing: border-box;
+  font-family: inherit;
 }
