@@ -11,7 +11,6 @@ export default function MenuChanger(){
     const [categories, setCategories] = useState([])
     const [categoryName, setCategoryName] = useState("")
 
-    const [dish, setDish] = useState({})
     const [price, setPrice] = useState('')
     const [name, setDishName] = useState('')
     const [desc, setDesc] = useState('')

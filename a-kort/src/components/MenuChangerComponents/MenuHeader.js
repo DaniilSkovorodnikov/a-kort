@@ -1,4 +1,3 @@
-import Modal from "./Modal";
 import React from "react";
 
 export default function MenuHeader({setVisible}){
