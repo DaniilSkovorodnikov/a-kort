@@ -43,7 +43,7 @@ export default function MenuChanger(){
             .then((res) => JSON.parse(res))
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
-        categoryDishes[currentCategory].push(JSON.stringify(dish));
+        categoryDishes[currentCategory].push((dish));
     }
 
 
