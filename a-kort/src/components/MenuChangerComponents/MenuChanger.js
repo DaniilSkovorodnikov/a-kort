@@ -11,6 +11,7 @@ let initialCategories = [];
     let response = await fetch("http://127.0.0.1:8000/get_dishes/")
     if (response.ok){
         initialDishes = await response.json()
+        initialDishes = initialDishes["dishes"]
         await initialDishes.forEach((v) => {
             if (initialCategories.indexOf(v.dish_category) === -1) {
                 initialCategories.push(v.dish_category)
@@ -129,14 +130,13 @@ export default function MenuChanger(){
             </Modal>
             <MenuHeader setVisible={setVisibleCategoryAdder} />
             <div className="menu">
-                {categories.map((v, index) => <Category name={v}
+                {categories.map((v, index ) => <Category name={v}
                                                         id={index}
                                                         key={index}
                                                         setVisible={setVisibleDishAdder}
                                                         setCurrentCategory={setCurrentCategory}
                                                         dishes={categoryDishes[index]}
                 />)}
-
             </div>
         </div>
     );
