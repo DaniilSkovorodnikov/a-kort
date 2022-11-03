@@ -25,12 +25,25 @@ export default function MenuChanger(){
     const [categoryDishes, setCategoryDishes] = useState([]);
 
     function AddNewDish(name, price, description, photo){
-        categoryDishes[currentCategory].push({
-            name,
-            price,
-            description,
-            photo
-        });
+        const dish = {
+            dish_name: name,
+            dish_price: price,
+            dish_description: description,
+            dish_image: photo,
+            dish_category: categories[currentCategory]
+        }
+        fetch("http://127.0.0.1:8000/add_dish/", {
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            method: "POST",
+            body: JSON.stringify({dish})
+        })
+            .then((res) => JSON.parse(res))
+            .then((res) => console.log(res))
+            .catch((err) => console.log(err))
+        categoryDishes[currentCategory].push(dish);
     }
 
 

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add a dish changer">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add a photo's">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Dish.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Dish.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <workItem from="1667376083473" duration="576000" />
       <workItem from="1667399741045" duration="1752000" />
       <workItem from="1667419242532" duration="6791000" />
-      <workItem from="1667459374507" duration="8127000" />
+      <workItem from="1667459374507" duration="9968000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667466951682</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add a photo's">
+      <created>1667468012298</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667468012298</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +152,7 @@
     <MESSAGE value="Updated menu changer" />
     <MESSAGE value="Remove warnings" />
     <MESSAGE value="Add a dish changer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a dish changer" />
+    <MESSAGE value="Add a photo's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a photo's" />
   </component>
 </project>

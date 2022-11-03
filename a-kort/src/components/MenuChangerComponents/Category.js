@@ -13,7 +13,7 @@ export default function Category({name, setVisible, id ,setCurrentCategory, dish
                 }} className="category__add-btn">Добавить блюдо</button>
             </div>
             <ul className="category__dishes">
-                {dishes.map((v, i) => <Dish name={v.name} price={v.price} photo={v.photo} key={i}/>)}
+                {dishes.map((v, i) => <Dish name={v.dish_name} price={v.dish_price} photo={v.dish_image} key={i}/>)}
             </ul>
         </div>
     )
