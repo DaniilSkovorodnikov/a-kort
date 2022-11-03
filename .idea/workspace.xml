@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Update getDishes">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix getDishes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +84,7 @@
       <workItem from="1667376083473" duration="576000" />
       <workItem from="1667399741045" duration="1752000" />
       <workItem from="1667419242532" duration="6791000" />
-      <workItem from="1667459374507" duration="15908000" />
+      <workItem from="1667459374507" duration="17003000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -197,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667479274368</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fix getDishes">
+      <created>1667479622047</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667479622047</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fix getDishes">
+      <created>1667479713596</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667479713596</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +244,7 @@
     <MESSAGE value="Add get_dishes func" />
     <MESSAGE value="Fix get_dishes func" />
     <MESSAGE value="Update getDishes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update getDishes" />
+    <MESSAGE value="Fix getDishes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix getDishes" />
   </component>
 </project>
