@@ -49,8 +49,8 @@ export default function MenuChanger(){
     (async function getDishes(){
         let response = await fetch("http://127.0.0.1:8000/get_dishes/")
         if (response.ok){
-            let json = response.json()
-            console.log(json)
+            let json = await response.json()
+            await console.log(json)
         }
         else{
             console.log(response.status)

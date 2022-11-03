@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix fetches">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
-    </list>
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix get_dishes func" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +81,7 @@
       <workItem from="1667376083473" duration="576000" />
       <workItem from="1667399741045" duration="1752000" />
       <workItem from="1667419242532" duration="6791000" />
-      <workItem from="1667459374507" duration="14933000" />
+      <workItem from="1667459374507" duration="15244000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -163,7 +160,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667477657137</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add get_dishes func">
+      <created>1667478547808</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667478547808</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix get_dishes func">
+      <created>1667478673095</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667478673095</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix get_dishes func">
+      <created>1667478783215</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667478783215</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +210,8 @@
     <MESSAGE value="Fix add_dish fetch" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Fix fetches" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix fetches" />
+    <MESSAGE value="Add get_dishes func" />
+    <MESSAGE value="Fix get_dishes func" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix get_dishes func" />
   </component>
 </project>
