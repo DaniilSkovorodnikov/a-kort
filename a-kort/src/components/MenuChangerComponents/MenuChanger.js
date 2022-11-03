@@ -40,7 +40,7 @@ export default function MenuChanger(){
             method: "POST",
             body: JSON.stringify({dish})
         })
-            .then((res) => JSON.parse(res))
+            .then((res) => res.json())
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         categoryDishes[currentCategory].push((dish));
@@ -61,12 +61,6 @@ export default function MenuChanger(){
                         setCategories([...categories, categoryName])
                         setCategoryDishes([...categoryDishes, []])
                         setVisibleCategoryAdder(false);
-                        fetch("http://127.0.0.1:8000/check_get/", {
-                            method: "GET"
-                        })
-                            .then((res) => JSON.parse(res))
-                            .then((res) => console.log(res))
-                            .catch((err) => console.log(err))
                     }} className="category-adder__add-btn">Добавить категорию</button>
                 </div>
             </Modal>
