@@ -4,8 +4,8 @@ import Modal from "./Modal";
 import {useState} from "react";
 import Category from "./Category";
 
-const [categoryDishes, setCategoryDishes] = useState([]);
 const [dishes, setDishes] = useState([]);
+const [categories, setCategories] = useState([]);
 
 (async function getDishes(){
     let response = await fetch("http://127.0.0.1:8000/get_dishes/")
@@ -27,7 +27,6 @@ export default function MenuChanger(){
     const [visibleCategoryAdder, setVisibleCategoryAdder] = useState(false);
     const [visibleDishAdder, setVisibleDishAdder] = useState(false);
 
-    const [categories, setCategories] = useState([]);
     const [categoryName, setCategoryName] = useState("");
     const [currentCategory, setCurrentCategory] = useState(0);
     const [photo, setPhoto] = useState();
@@ -41,6 +40,7 @@ export default function MenuChanger(){
     const [price, setPrice] = useState('');
     const [name, setDishName] = useState('');
     const [desc, setDesc] = useState('');
+    const [categoryDishes, setCategoryDishes] = useState([]);
 
     function AddNewDish(name, price, description, photo){
         const dish = {
