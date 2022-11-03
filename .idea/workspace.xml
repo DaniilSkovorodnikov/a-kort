@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add a menu changer and header">
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Modal.js" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Remove warnings">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Dish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/CategoryAdder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +87,8 @@
       <workItem from="1667309132697" duration="6335000" />
       <workItem from="1667376083473" duration="576000" />
       <workItem from="1667399741045" duration="1752000" />
-      <workItem from="1667419242532" duration="6620000" />
+      <workItem from="1667419242532" duration="6791000" />
+      <workItem from="1667459374507" duration="7129000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -105,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667314963785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated menu changer">
+      <created>1667428222515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667428222515</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove warnings">
+      <created>1667428322882</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667428322882</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add a project" />
     <MESSAGE value="Add a menu changer and header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a menu changer and header" />
+    <MESSAGE value="Updated menu changer" />
+    <MESSAGE value="Remove warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove warnings" />
   </component>
 </project>

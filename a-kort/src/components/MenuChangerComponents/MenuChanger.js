@@ -6,15 +6,34 @@ import Category from "./Category";
 
 export default function MenuChanger(){
     const [visibleCategoryAdder, setVisibleCategoryAdder] = useState(false);
-    const [visibleDishAdder, setVisibleDishAdder] = useState(false)
+    const [visibleDishAdder, setVisibleDishAdder] = useState(false);
 
-    const [categories, setCategories] = useState([])
-    const [categoryName, setCategoryName] = useState("")
+    const [categories, setCategories] = useState([]);
+    const [categoryName, setCategoryName] = useState("");
+    const [currentCategory, setCurrentCategory] = useState(0);
+    const [photo, setPhoto] = useState();
+    const [photoURL, setPhotoURL] = useState()
+    const fileReader = new FileReader();
+    fileReader.onloadend = () => {
+        setPhotoURL(fileReader.result)
+        console.log(fileReader.result)
+    }
 
-    const [price, setPrice] = useState('')
-    const [name, setDishName] = useState('')
-    const [desc, setDesc] = useState('')
-    const [dishes, setDishes] = useState([])
+    const [price, setPrice] = useState('');
+    const [name, setDishName] = useState('');
+    const [desc, setDesc] = useState('');
+    const [categoryDishes, setCategoryDishes] = useState([]);
+
+    function AddNewDish(name, price, description, photo){
+        categoryDishes[currentCategory].push({
+            name,
+            price,
+            description,
+            photo
+        });
+    }
+
+
 
     return (
         <div className="menu-changer">
@@ -27,6 +46,7 @@ export default function MenuChanger(){
                     />
                     <button onClick={() => {
                         setCategories([...categories, categoryName])
+                        setCategoryDishes([...categoryDishes, []])
                         setVisibleCategoryAdder(false);
                     }} className="category-adder__add-btn">Добавить категорию</button>
                 </div>
@@ -38,6 +58,10 @@ export default function MenuChanger(){
                             <input
                                 className="dish-characteristics__photo"
                                 type="file"
+                                onChange={(e) => {
+                                    setPhoto(e.target.files[0]);
+                                    fileReader.readAsDataURL(e.target.files[0])
+                                }}
                             />
                             <div className="dish-characteristics__numerical">
                                 <input
@@ -49,11 +73,7 @@ export default function MenuChanger(){
                                     className="dish-characteristics__add-btn"
                                     onClick={() => {
                                         setVisibleDishAdder(false);
-                                        setDishes([...dishes, {
-                                            price,
-                                            name,
-                                            desc
-                                        }])
+                                        AddNewDish(name, price, desc, photoURL);
                                     }
                                 }
                                 >
@@ -78,7 +98,13 @@ export default function MenuChanger(){
             </Modal>
             <MenuHeader setVisible={setVisibleCategoryAdder} />
             <div className="menu">
-                {categories.map((v, index) => <Category name={v} key={index} setVisible={setVisibleDishAdder}/>)}
+                {categories.map((v, index) => <Category name={v}
+                                                        id={index}
+                                                        key={index}
+                                                        setVisible={setVisibleDishAdder}
+                                                        setCurrentCategory={setCurrentCategory}
+                                                        dishes={categoryDishes[index]}
+                />)}
 
             </div>
         </div>
