@@ -4,6 +4,25 @@ import Modal from "./Modal";
 import {useState} from "react";
 import Category from "./Category";
 
+const [categoryDishes, setCategoryDishes] = useState([]);
+const [dishes, setDishes] = useState([]);
+
+(async function getDishes(){
+    let response = await fetch("http://127.0.0.1:8000/get_dishes/")
+    if (response.ok){
+        let json = await response.json()
+        await setDishes(json)
+        await dishes.forEach((v) => {
+            if (categories.indexOf(v.dish_category) === -1) {
+                setCategories([...categories, v.dish_category])
+            }
+        })
+    }
+    else{
+        console.log(response.status)
+    }
+})();
+
 export default function MenuChanger(){
     const [visibleCategoryAdder, setVisibleCategoryAdder] = useState(false);
     const [visibleDishAdder, setVisibleDishAdder] = useState(false);
@@ -22,9 +41,6 @@ export default function MenuChanger(){
     const [price, setPrice] = useState('');
     const [name, setDishName] = useState('');
     const [desc, setDesc] = useState('');
-    const [categoryDishes, setCategoryDishes] = useState([]);
-
-    const [dishes, setDishes] = useState([])
 
     function AddNewDish(name, price, description, photo){
         const dish = {
@@ -47,23 +63,6 @@ export default function MenuChanger(){
             .catch((err) => console.log(err))
         categoryDishes[currentCategory].push((dish));
     }
-
-    (async function getDishes(){
-        let response = await fetch("http://127.0.0.1:8000/get_dishes/")
-        if (response.ok){
-            let json = await response.json()
-            await setDishes(json)
-            await dishes.forEach((v) => {
-                if (categories.indexOf(v.dish_category) === -1) {
-                    setCategories([...categories, v.dish_category])
-                }
-            })
-        }
-        else{
-            console.log(response.status)
-        }
-    })();
-
 
 
     return (
