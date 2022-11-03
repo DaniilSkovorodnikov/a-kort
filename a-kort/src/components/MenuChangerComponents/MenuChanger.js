@@ -46,10 +46,17 @@ export default function MenuChanger(){
         categoryDishes[currentCategory].push((dish));
     }
 
+    async function getDishes(){
+        let response = await fetch("http://127.0.0.1:8000/get_dishes/")
+        let json = response.json()
+        console.log(json)
+    }
+
 
 
     return (
         <div className="menu-changer">
+            {getDishes()}
             <Modal visible={visibleCategoryAdder} setVisible={setVisibleCategoryAdder}>
                 <div className="category-adder__content" onClick={(e) => e.stopPropagation()}>
                     <input className="category-adder__name"
