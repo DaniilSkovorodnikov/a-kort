@@ -1,48 +1,49 @@
 import MenuHeader from './MenuHeader.js'
 import '../../styles/MenuChanger.scss'
 import Modal from "./Modal";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Category from "./Category";
 
-
-let initialDishes = [];
-let initialCategories = [];
-(async function getDishes(){
-    let response = await fetch("http://127.0.0.1:8000/get_dishes/")
-    if (response.ok){
-        initialDishes = await response.json()
-        initialDishes = initialDishes["dishes"]
-        await initialDishes.forEach((v) => {
-            if (initialCategories.indexOf(v.dish_category) === -1) {
-                initialCategories.push(v.dish_category)
-            }
-        })
-        await console.log(initialDishes)
-    }
-    else{
-        console.log(response.status)
-    }
-})();
+async function getData(){
+    const data = await new Promise((resolve, reject) => {
+        const initialCategories = [];
+        const initialDishes = [];
+        initialCategories.push("Бургеры", "Роллы");
+        initialDishes.push(
+            [{dish_name: "Чизбургер", dish_price: "55", dish_image: ""}],
+            [{dish_name: "Филадельфия", dish_price: "150", dish_image: ""}]
+        );
+        resolve([initialCategories, initialDishes])
+    }).then((v) => v)
+    return data
+}
 
 export default function MenuChanger(){
+    useEffect(() => {
+        const setData = (categories, dishes) =>{
+            setCategories(categories);
+            setCategoryDishes([...dishes])
+        }
+        getData().then((v) => setData(v[0], v[1]))
+    }, [])
+
+
     const [visibleCategoryAdder, setVisibleCategoryAdder] = useState(false);
     const [visibleDishAdder, setVisibleDishAdder] = useState(false);
 
     const [categoryName, setCategoryName] = useState("");
-    const [currentCategory, setCurrentCategory] = useState(0);
+    const [currentCategory, setCurrentCategory] = useState(-1);
     const [photo, setPhoto] = useState();
     const [photoURL, setPhotoURL] = useState()
     const fileReader = new FileReader();
     fileReader.onloadend = () => {
         setPhotoURL(fileReader.result)
-        console.log(fileReader.result)
     }
-
     const [price, setPrice] = useState('');
     const [name, setDishName] = useState('');
     const [desc, setDesc] = useState('');
     const [categoryDishes, setCategoryDishes] = useState([]);
-    const [categories, setCategories] = useState(initialCategories);
+    const [categories, setCategories] = useState([]);
 
     function AddNewDish(name, price, description, photo){
         const dish = {
@@ -130,13 +131,16 @@ export default function MenuChanger(){
             </Modal>
             <MenuHeader setVisible={setVisibleCategoryAdder} />
             <div className="menu">
-                {categories.map((v, index ) => <Category name={v}
-                                                        id={index}
-                                                        key={index}
-                                                        setVisible={setVisibleDishAdder}
-                                                        setCurrentCategory={setCurrentCategory}
-                                                        dishes={categoryDishes[index]}
-                />)}
+                {categories.map((v, index ) => {
+                    console.log(categories, categoryDishes, currentCategory);
+                    return <Category name={v}
+                              id={index}
+                              key={index}
+                              setVisible={setVisibleDishAdder}
+                              setCurrentCategory={setCurrentCategory}
+                              dishes={categoryDishes[index]}
+                    />
+                })}
             </div>
         </div>
     );
