@@ -6,7 +6,10 @@ export default function Modal({visible, setVisible, children}){
     }
 
     return (
-      <div className={classes.join(' ')} onClick={() => setVisible(false)}>
+      <div className={classes.join(' ')} onClick={() => {
+          if (setVisible)
+            setVisible(false)
+      }}>
           {children}
       </div>
     );

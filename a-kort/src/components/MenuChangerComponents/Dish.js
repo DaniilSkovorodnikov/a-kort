@@ -1,7 +1,8 @@
 import {useState} from "react";
 import Modal from "./Modal";
 
-export default function Dish({name, price, photo, description}){
+export default function Dish({name, price, photo, description, updateCategoryDishes}){
+    const [prev_name, setPrevName] = useState(name)
     const [dish_name, setName] = useState(name)
     const [dish_price, setPrice] = useState(price)
     const [dish_img, setImg] = useState(photo)
@@ -12,10 +13,24 @@ export default function Dish({name, price, photo, description}){
         setImg(fileReader.result)
     }
 
+    function updateDish(){
+        const dish = {
+            dish_name,
+            dish_price,
+            dish_description,
+            dish_img
+        }
+        updateCategoryDishes((prevState) => {
+            const index = prevState.findIndex((v) => v.dish_name === prev_name);
+            prevState[index] = dish;
+            return prevState
+        })
+    }
+
     const [visible, setVisible] = useState(false)
     return(
         <div>
-            <Modal visible={visible} setVisible={setVisible}>
+            <Modal visible={visible}>
                 <div className="dish-adder">
                     <div className="dish-characteristics" onClick={(e) => e.stopPropagation()}>
                         <div className="dish-characteristics__left">
@@ -37,6 +52,7 @@ export default function Dish({name, price, photo, description}){
                                     className="dish-characteristics__add-btn"
                                     onClick={() => {
                                         setVisible(false);
+                                        updateDish()
                                     }
                                     }
                                 >
@@ -49,7 +65,10 @@ export default function Dish({name, price, photo, description}){
                                 className="dish-characteristics__name"
                                 placeholder="Название"
                                 value={dish_name}
-                                onChange={(e) => setName(e.target.value)}
+                                onChange={(e) => {
+                                    setPrevName(name)
+                                    setName(e.target.value)
+                                }}
                             />
                             <input
                                 className="dish-characteristics__desc"

@@ -81,7 +81,7 @@ export default function Category({name, id, dishes}){
                                     className="dish-characteristics__add-btn"
                                     onClick={() => {
                                         setVisibleDishAdder(false);
-                                        AddNewDish(dishName, dishPrice, dishDesc, dishPhoto)
+                                        AddNewDish(dishName, dishPrice, dishDesc, photoURL)
                                         setPrice('')
                                         setDishName('')
                                         setDesc('')
@@ -122,7 +122,7 @@ export default function Category({name, id, dishes}){
                 </div>
                 <ul className="category__dishes">
                     {categoryDishes.map((v, i) => {
-                        return <Dish name={v.dish_name} price={v.dish_price} photo={v.dish_image} key={i}/>;
+                        return <Dish name={v.dish_name} price={v.dish_price} photo={v.dish_image} key={i} updateCategoryDishes={setCategoryDishes}/>;
                     })}
                 </ul>
             </div>
