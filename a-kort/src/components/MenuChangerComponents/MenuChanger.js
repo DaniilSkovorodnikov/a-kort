@@ -4,6 +4,7 @@ import Modal from "./Modal";
 import {useEffect, useState} from "react";
 import Category from "./Category";
 
+const fileReader = new FileReader();
 async function getData(){
     const initialCategories = [];
     const initialDishes = [];
@@ -11,8 +12,7 @@ async function getData(){
     const res = await data.json();
     for (const dish of res["dishes"]){
         if(dish.dish_image !== ''){
-            const image = await fetch(`http://127.0.0.1:8000/get_image/?image${dish.dish_image}`)
-            dish.dish_image = await image.json()
+            dish.dish_image = `http://127.0.0.1:8000/get_image/?image=${dish.dish_image}`
         }
         let indexOfCategory = initialCategories.indexOf(dish.dish_category);
         if(indexOfCategory === -1)
