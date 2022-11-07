@@ -5,17 +5,19 @@ import {useEffect, useState} from "react";
 import Category from "./Category";
 
 async function getData(){
-    const data = await new Promise((resolve, reject) => {
-        const initialCategories = [];
-        const initialDishes = [];
-        initialCategories.push("Бургеры", "Роллы");
-        initialDishes.push(
-            [{dish_name: "Чизбургер", dish_price: "55", dish_image: ""}],
-            [{dish_name: "Филадельфия", dish_price: "150", dish_image: ""}]
-        );
-        resolve([initialCategories, initialDishes])
-    }).then((v) => v)
-    return data
+    const initialCategories = [];
+    const initialDishes = [];
+    const data = await fetch("http://127.0.0.1:8000/get_all_dishes/");
+    const res = await data.json();
+    for (const dish in res["dishes"]){
+        const indexOfCategory = initialCategories.indexOf(dish.dish_category);
+        if(indexOfCategory === -1)
+            initialCategories.push(dish.dish_category)
+        if(initialDishes.length - 1 < indexOfCategory)
+            initialDishes.push([])
+        initialDishes[indexOfCategory].push(dish)
+    }
+    return [initialCategories, initialDishes]
 }
 
 export default function MenuChanger(){
@@ -81,6 +83,7 @@ export default function MenuChanger(){
                         setCategories([...categories, categoryName])
                         setCategoryDishes([...categoryDishes, []])
                         setVisibleCategoryAdder(false);
+                        setCategoryName('')
                     }} className="category-adder__add-btn">Добавить категорию</button>
                 </div>
             </Modal>
@@ -100,6 +103,7 @@ export default function MenuChanger(){
                                 <input
                                     className="dish-characteristics__price"
                                     placeholder="Цена"
+                                    value={price}
                                     onChange={(e) => setPrice(e.target.value)}
                                 />
                                 <button
@@ -107,6 +111,9 @@ export default function MenuChanger(){
                                     onClick={() => {
                                         setVisibleDishAdder(false);
                                         AddNewDish(name, price, desc, photoURL);
+                                        setPrice('')
+                                        setDishName('')
+                                        setDesc('')
                                     }
                                 }
                                 >
@@ -118,11 +125,13 @@ export default function MenuChanger(){
                             <input
                                 className="dish-characteristics__name"
                                 placeholder="Название"
+                                value={name}
                                 onChange={(e) => setDishName(e.target.value)}
                             />
                             <input
                                 className="dish-characteristics__desc"
                                 placeholder="Описание"
+                                value={desc}
                                 onChange={(e) => setDesc(e.target.value)}
                             />
                         </div>
@@ -132,7 +141,7 @@ export default function MenuChanger(){
             <MenuHeader setVisible={setVisibleCategoryAdder} />
             <div className="menu">
                 {categories.map((v, index ) => {
-                    console.log(categories, categoryDishes, currentCategory);
+                    console.log(categoryDishes[index])
                     return <Category name={v}
                               id={index}
                               key={index}

@@ -1,9 +1,71 @@
-export default function Dish({name, price, photo}){
+import {useState} from "react";
+import Modal from "./Modal";
+
+export default function Dish({name, price, photo, description}){
+    const [dish_name, setName] = useState(name)
+    const [dish_price, setPrice] = useState(price)
+    const [dish_img, setImg] = useState(photo)
+    const [dish_description, setDescription] = useState(description)
+
+    const fileReader = new FileReader();
+    fileReader.onloadend = () => {
+        setImg(fileReader.result)
+    }
+
+    const [visible, setVisible] = useState(false)
     return(
-      <div className="dish">
-          <img src={photo} width={245} height={160} alt="" className="dish__photo"/>
-          <h2 className="dish__name">{name}</h2>
-          <p className="dish__price">{price} <span>&#8381;</span></p>
-      </div>
+        <div>
+            <Modal visible={visible} setVisible={setVisible}>
+                <div className="dish-adder">
+                    <div className="dish-characteristics" onClick={(e) => e.stopPropagation()}>
+                        <div className="dish-characteristics__left">
+                            <input
+                                className="dish-characteristics__photo"
+                                type="file"
+                                onChange={(e) => {
+                                    fileReader.readAsDataURL(e.target.files[0])
+                                }}
+                            />
+                            <div className="dish-characteristics__numerical">
+                                <input
+                                    className="dish-characteristics__price"
+                                    placeholder="Цена"
+                                    value={dish_price}
+                                    onChange={(e) => setPrice(e.target.value)}
+                                />
+                                <button
+                                    className="dish-characteristics__add-btn"
+                                    onClick={() => {
+                                        setVisible(false);
+                                    }
+                                    }
+                                >
+                                    Закрыть
+                                </button>
+                            </div>
+                        </div>
+                        <div className="dish-characteristics__right">
+                            <input
+                                className="dish-characteristics__name"
+                                placeholder="Название"
+                                value={dish_name}
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                            <input
+                                className="dish-characteristics__desc"
+                                placeholder="Описание"
+                                value={dish_description}
+                                onChange={(e) => setDescription(e.target.value)}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </Modal>
+            <div className="dish" onClick={() => setVisible(true)}>
+                <img src={dish_img} width={245} height={160} alt="" className="dish__photo"/>
+                <h2 className="dish__name">{dish_name}</h2>
+                <p className="dish__price">{dish_price} <span>&#8381;</span></p>
+            </div>
+        </div>
     );
 }

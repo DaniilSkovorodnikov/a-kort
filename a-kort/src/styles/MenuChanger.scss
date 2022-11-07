@@ -97,6 +97,11 @@
     margin-top: 27px;
     flex-wrap: wrap;
   }
+
+  &__buttons{
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .dish-adder{
@@ -181,6 +186,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  cursor: pointer;
 
   &__photo{
     object-fit: contain;
@@ -198,5 +204,24 @@
     font-size: 22px;
     line-height: 27px;
     align-self: flex-start;
+  }
+}
+
+.current-dishes{
+  box-sizing: border-box;
+  width: 25%;
+  height: 500px;
+  background-color: white;
+  margin: auto;
+  padding: 60px;
+
+  &__item{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: lightgray;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
