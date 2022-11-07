@@ -1,12 +1,19 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Modal from "./Modal";
 
-export default function Dish({name, price, photo, description, updateCategoryDishes}){
+export default function Dish({name, price, photo, description, categoryDishes, updateCategoryDishes}){
     const [prev_name, setPrevName] = useState(name)
     const [dish_name, setName] = useState(name)
     const [dish_price, setPrice] = useState(price)
     const [dish_img, setImg] = useState(photo)
     const [dish_description, setDescription] = useState(description)
+    useEffect(() =>{
+        setName(name);
+        setPrice(price)
+        setImg(photo)
+        setDescription(description)
+    }, [categoryDishes])
+
 
     const fileReader = new FileReader();
     fileReader.onloadend = () => {

@@ -122,7 +122,9 @@ export default function Category({name, id, dishes}){
                 </div>
                 <ul className="category__dishes">
                     {categoryDishes.map((v, i) => {
-                        return <Dish name={v.dish_name} price={v.dish_price} photo={v.dish_image} key={i} updateCategoryDishes={setCategoryDishes}/>;
+                        return <Dish name={v.dish_name} price={v.dish_price} photo={v.dish_image} key={i}
+                                     categoryDishes={categoryDishes}
+                                     updateCategoryDishes={setCategoryDishes}/>;
                     })}
                 </ul>
             </div>
