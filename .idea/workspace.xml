@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix fetch">
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
-    </list>
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix get iamge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,7 @@
       <workItem from="1667565066527" duration="657000" />
       <workItem from="1667733382896" duration="133000" />
       <workItem from="1667764989188" duration="3627000" />
-      <workItem from="1667813542536" duration="10501000" />
+      <workItem from="1667813542536" duration="10936000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -265,7 +263,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667824459324</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add get iamge">
+      <created>1667825279507</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1667825279507</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Fix get iamge">
+      <created>1667825369814</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1667825369814</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +313,8 @@
     <MESSAGE value="Add bad fetch" />
     <MESSAGE value="Fix architecture" />
     <MESSAGE value="Fix fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix fetch" />
+    <MESSAGE value="Add get iamge" />
+    <MESSAGE value="Fix get iamge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix get iamge" />
   </component>
 </project>

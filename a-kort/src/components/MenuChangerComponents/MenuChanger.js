@@ -10,8 +10,10 @@ async function getData(){
     const data = await fetch("http://127.0.0.1:8000/get_dishes/");
     const res = await data.json();
     for (const dish of res["dishes"]){
-        const image = await fetch(`http://127.0.0.1:8000/get_image/?image${dish.dish_image}`)
-        dish.dish_image = await image.json()
+        if(dish.dish_image !== ''){
+            const image = await fetch(`http://127.0.0.1:8000/get_image/?image${dish.dish_image}`)
+            dish.dish_image = await image.json()
+        }
         let indexOfCategory = initialCategories.indexOf(dish.dish_category);
         if(indexOfCategory === -1)
             initialCategories.push(dish.dish_category)
