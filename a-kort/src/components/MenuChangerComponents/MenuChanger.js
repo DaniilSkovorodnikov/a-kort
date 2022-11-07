@@ -4,7 +4,6 @@ import Modal from "./Modal";
 import {useEffect, useState} from "react";
 import Category from "./Category";
 
-const fileReader = new FileReader();
 async function getData(){
     const initialCategories = [];
     const initialDishes = [];
