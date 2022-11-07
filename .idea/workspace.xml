@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix getDishes">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add bad fetch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Dish.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Dish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1667565066527" duration="657000" />
       <workItem from="1667733382896" duration="133000" />
       <workItem from="1667764989188" duration="3627000" />
-      <workItem from="1667813542536" duration="1432000" />
+      <workItem from="1667813542536" duration="7439000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667563979780</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add bad fetch">
+      <created>1667815047398</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667815047398</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +279,7 @@
     <MESSAGE value="Fix get_dishes func" />
     <MESSAGE value="Update getDishes" />
     <MESSAGE value="Fix getDishes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix getDishes" />
+    <MESSAGE value="Add bad fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bad fetch" />
   </component>
 </project>
