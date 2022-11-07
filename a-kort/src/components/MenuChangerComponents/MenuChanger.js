@@ -7,12 +7,13 @@ import Category from "./Category";
 async function getData(){
     const initialCategories = [];
     const initialDishes = [];
-    const data = await fetch("http://127.0.0.1:8000/get_all_dishes/");
+    const data = await fetch("http://127.0.0.1:8000/get_dishes/");
     const res = await data.json();
-    for (const dish in res["dishes"]){
-        const indexOfCategory = initialCategories.indexOf(dish.dish_category);
+    for (const dish of res["dishes"]){
+        let indexOfCategory = initialCategories.indexOf(dish.dish_category);
         if(indexOfCategory === -1)
             initialCategories.push(dish.dish_category)
+        indexOfCategory = initialCategories.indexOf(dish.dish_category);
         if(initialDishes.length - 1 < indexOfCategory)
             initialDishes.push([])
         initialDishes[indexOfCategory].push(dish)
