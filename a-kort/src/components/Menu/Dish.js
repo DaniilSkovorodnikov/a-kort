@@ -5,7 +5,7 @@ export default function Dish({name, price, photo}){
         <li className="user-dish">
             <img src={photo} className="user-dish__photo" alt=""></img>
             <h2 className="user-dish__name">{name}</h2>
-            <p className="user-dish__price">{price}</p>
+            <p className="user-dish__price">{price} <span>&#8381;</span></p>
         </li>
     )
 }
