@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix user menu" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix add dishes in user menu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Menu/Menu.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +93,7 @@
       <workItem from="1667813542536" duration="14746000" />
       <workItem from="1667904251179" duration="39000" />
       <workItem from="1667975018434" duration="378000" />
-      <workItem from="1668065621884" duration="6048000" />
+      <workItem from="1668065621884" duration="6642000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -358,7 +361,35 @@
       <option name="project" value="LOCAL" />
       <updated>1668071740604</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Fix styles">
+      <created>1668071808816</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1668071808816</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Fix styles">
+      <created>1668071836831</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1668071836831</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Fix styles">
+      <created>1668071869191</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1668071869191</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fix add dishes in user menu">
+      <created>1668071962618</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1668071962618</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,8 +407,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add a menu changer and header" />
-    <MESSAGE value="Updated menu changer" />
     <MESSAGE value="Remove warnings" />
     <MESSAGE value="Add a dish changer" />
     <MESSAGE value="Add a photo's" />
@@ -401,6 +430,8 @@
     <MESSAGE value="Add user menu" />
     <MESSAGE value="Add get dishes in user menu" />
     <MESSAGE value="Fix user menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix user menu" />
+    <MESSAGE value="Fix styles" />
+    <MESSAGE value="Fix add dishes in user menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix add dishes in user menu" />
   </component>
 </project>
