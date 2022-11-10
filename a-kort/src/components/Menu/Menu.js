@@ -23,23 +23,26 @@ export default function Menu(){
             <div className="user-menu">
                 <ul className="categories">
                     <li className="categories__item">
-                        <button className="categories__btn">Всё</button>
-                        {categories.map((v, index) => <button className="categories__btn"
-                                                              onClick={() => {
-                                                                  setCurrentCategory(index)
-                                                              }}
-                                                              key={index + 1}
-                        >{v}</button> )}
+                        <button className="categories__btn" onClick={() => {
+                            setCurrentCategory(-1)
+                        }}>Всё
+                        </button>
                     </li>
+                    {categories.map((v, index) => <li className="categories__item">
+                        <button className="categories__btn"
+                                                          onClick={() => {
+                                                              setCurrentCategory(index)
+                                                          }}
+                                                          key={index}
+                    >{v}</button>
+                    </li>)}
                 </ul>
                 <ul className="dishes">
-                    <li>
                         {
                             currentCategory === -1 ?
                             dishes.forEach((v) => {v.map((dish) => <Dish name={dish.dish_name} price={dish.dish_price} photo={dish.dish_image}/>)}):
                             dishes[currentCategory].map((v) => <Dish name={v.dish_name} price={v.dish_price} photo={v.dish_image}/>)
                         }
-                    </li>
                 </ul>
             </div>
         </div>
