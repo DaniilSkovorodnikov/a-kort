@@ -8,7 +8,7 @@ export default function Menu(){
     useEffect(() => {
         const setData = (categories, dishes) =>{
             setCategories(categories);
-            setDishes([dishes])
+            setDishes(dishes)
         }
         getData().then((v) => setData(v[0], v[1]))
     }, [])
