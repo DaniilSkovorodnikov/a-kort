@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import Modal from "./Modal";
 
-export default function Dish({name, price, photo, description, categoryDishes, updateCategoryDishes}){
+export default function AdminDish({name, price, photo, description, categoryDishes, updateCategoryDishes}){
     const [prev_name, setPrevName] = useState(name)
     const [dish_name, setName] = useState(name)
     const [dish_price, setPrice] = useState(price)
@@ -87,10 +87,10 @@ export default function Dish({name, price, photo, description, categoryDishes, u
                     </div>
                 </div>
             </Modal>
-            <div className="dish" onClick={() => setVisible(true)}>
+            <div className="admin-dish" onClick={() => setVisible(true)}>
                 <img src={dish_img} width={245} height={160} alt="" className="dish__photo"/>
-                <h2 className="dish__name">{dish_name}</h2>
-                <p className="dish__price">{dish_price} <span>&#8381;</span></p>
+                <h2 className="admin-dish__name">{dish_name}</h2>
+                <p className="admin-dish__price">{dish_price} <span>&#8381;</span></p>
             </div>
         </div>
     );

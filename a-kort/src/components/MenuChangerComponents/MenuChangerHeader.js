@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MenuHeader({setVisible}){
+export default function MenuChangerHeader({setVisible}){
     return (
         <div className="menu-header">
             <div className="menu-header__about">

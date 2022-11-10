@@ -1,10 +1,11 @@
-import MenuHeader from './MenuHeader.js'
+import MenuChangerHeader from './MenuChangerHeader.js'
 import '../../styles/MenuChanger.scss'
 import Modal from "./Modal";
 import {useEffect, useState} from "react";
 import Category from "./Category";
+import Header from "./Header";
 
-async function getData(){
+export async function getData(){
     const initialCategories = [];
     const initialDishes = [];
     const data = await fetch("http://127.0.0.1:8000/get_dishes/");
@@ -41,31 +42,35 @@ export default function MenuChanger(){
     const [initialCategoryDishes, setInitialCategoryDishes] = useState([]);
 
     return (
-        <div className="menu-changer">
-            <Modal visible={visibleCategoryAdder} setVisible={setVisibleCategoryAdder}>
-                <div className="category-adder__content" onClick={(e) => e.stopPropagation()}>
-                    <input className="category-adder__name"
-                           value={categoryName}
-                           onChange={(e) => setCategoryName(e.target.value)}
-                           placeholder="Введите название категории"
-                    />
-                    <button onClick={() => {
-                        setCategories([...categories, categoryName])
-                        setVisibleCategoryAdder(false);
-                        setCategoryName('')
-                    }} className="category-adder__add-btn">Добавить категорию</button>
+        <div>
+            <Header/>
+            <div className="menu-changer">
+                <Modal visible={visibleCategoryAdder} setVisible={setVisibleCategoryAdder}>
+                    <div className="category-adder__content" onClick={(e) => e.stopPropagation()}>
+                        <input className="category-adder__name"
+                               value={categoryName}
+                               onChange={(e) => setCategoryName(e.target.value)}
+                               placeholder="Введите название категории"
+                        />
+                        <button onClick={() => {
+                            setCategories([...categories, categoryName])
+                            setVisibleCategoryAdder(false);
+                            setCategoryName('')
+                        }} className="category-adder__add-btn">Добавить категорию</button>
+                    </div>
+                </Modal>
+                <MenuChangerHeader setVisible={setVisibleCategoryAdder} />
+                <div className="admin-menu">
+                    {categories.map((v, index ) => {
+                        return <Category name={v}
+                                         id={index}
+                                         key={index}
+                                         dishes={initialCategoryDishes[index] === undefined ? [] : initialCategoryDishes[index]}
+                        />
+                    })}
                 </div>
-            </Modal>
-            <MenuHeader setVisible={setVisibleCategoryAdder} />
-            <div className="menu">
-                {categories.map((v, index ) => {
-                    return <Category name={v}
-                                     id={index}
-                                     key={index}
-                                     dishes={initialCategoryDishes[index] === undefined ? [] : initialCategoryDishes[index]}
-                    />
-                })}
             </div>
         </div>
+
     );
 }

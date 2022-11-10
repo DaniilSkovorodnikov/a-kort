@@ -1,0 +1,47 @@
+.user-header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+
+  &__left{
+    display: flex;
+    margin-left: 45px;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+  }
+
+  &__search{
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    margin: 0 45px 0 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+  }
+
+  &__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5%;
+    margin-right: 55px;
+  }
+
+  &__theme{
+    background-image: url("../img/theme-btn.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+  }
+
+  &__profile{
+    background-image: url("../img/profile-btn.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 30px;
+    background-color: transparent;
+  }
+}

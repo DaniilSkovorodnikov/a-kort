@@ -1,13 +1,12 @@
 import '../styles/App.scss';
-import Header from "./Header";
 import MenuChanger from "./MenuChangerComponents/MenuChanger";
 import React from "react";
+import Menu from "./Menu/Menu";
 
 export default function App() {
   return (
     <div className="App">
-      <Header />
-      <MenuChanger/>
+      <Menu/>
     </div>
   );
 }

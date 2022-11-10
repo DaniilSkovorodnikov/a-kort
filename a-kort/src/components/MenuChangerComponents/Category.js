@@ -1,4 +1,4 @@
-import Dish from "./Dish";
+import AdminDish from "./AdminDish";
 import Modal from "./Modal";
 import {useState} from "react";
 
@@ -126,9 +126,9 @@ export default function Category({name, id, dishes}){
                 </div>
                 <ul className="category__dishes">
                     {categoryDishes.map((v, i) => {
-                        return <Dish name={v.dish_name} price={v.dish_price} photo={v.dish_image} key={i}
-                                     categoryDishes={categoryDishes}
-                                     updateCategoryDishes={setCategoryDishes}/>;
+                        return <AdminDish name={v.dish_name} price={v.dish_price} photo={v.dish_image} key={i}
+                                          categoryDishes={categoryDishes}
+                                          updateCategoryDishes={setCategoryDishes}/>;
                     })}
                 </ul>
             </div>
