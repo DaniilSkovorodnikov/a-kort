@@ -7,7 +7,15 @@ import Menu from "./Menu/Menu";
 export default function App() {
   return (
     <div className="App">
-      <Menu/>
+        <ul>
+            <Link to="/menu">Меню</Link>
+            <Link to="/changer">Админка</Link>
+        </ul>
+
+      <Routes>
+          <Route path={"/menu"} element={<Menu/>}/>
+          <Route path="/changer" element={<MenuChanger/>}/>
+      </Routes>
     </div>
   );
 }
