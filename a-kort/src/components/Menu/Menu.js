@@ -7,8 +7,8 @@ import {useEffect, useState} from "react";
 export default function Menu(){
     useEffect(() => {
         const setData = (categories, dishes) =>{
-            for (const category of dishes){
-                for (const dish of category){
+            for (let category of dishes){
+                for (let dish of category){
                     setAllDishes([...allDishes, dish])
                 }
             }
