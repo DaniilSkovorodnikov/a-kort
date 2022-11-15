@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix immediately invoked renders">
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix fetch">
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +97,7 @@
       <workItem from="1668257525780" duration="443000" />
       <workItem from="1668358181091" duration="5000" />
       <workItem from="1668442338260" duration="345000" />
-      <workItem from="1668502682771" duration="16307000" />
-    </task>
-    <task id="LOCAL-00004" summary="Remove warnings">
-      <created>1667428322882</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1667428322882</updated>
+      <workItem from="1668502682771" duration="16613000" />
     </task>
     <task id="LOCAL-00005" summary="Add a dish changer">
       <created>1667466951682</created>
@@ -443,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668520696469</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Fix fetch">
+      <created>1668521135303</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1668521135303</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +470,6 @@
     <MESSAGE value="Fix getDishes" />
     <MESSAGE value="Add bad fetch" />
     <MESSAGE value="Fix architecture" />
-    <MESSAGE value="Fix fetch" />
     <MESSAGE value="Add get iamge" />
     <MESSAGE value="Fix get iamge" />
     <MESSAGE value="Add delete dish" />
@@ -486,6 +484,7 @@
     <MESSAGE value="Add a restaurant menu for admin" />
     <MESSAGE value="Fix restaurant menu" />
     <MESSAGE value="Fix immediately invoked renders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix immediately invoked renders" />
+    <MESSAGE value="Fix fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix fetch" />
   </component>
 </project>
