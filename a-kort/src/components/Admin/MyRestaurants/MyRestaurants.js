@@ -24,7 +24,7 @@ export default function MyRestaurants({setCurrentRestaurant}){
     const [restaurants, setRestaurants] = useState([]);
 
     function AddRestaurant(){
-        const newRestaurant = {
+        const restaurant = {
             name,
             location,
             description,
@@ -36,12 +36,12 @@ export default function MyRestaurants({setCurrentRestaurant}){
                 Accept: "application/json",
             },
             method: "POST",
-            body: JSON.stringify(newRestaurant)
+            body: JSON.stringify(restaurant)
         })
             .then((res) => res.json())
             .then((v) => console.log(v))
             .catch((err) => console.log(err));
-        setRestaurants([...restaurants, newRestaurant]);
+        setRestaurants([...restaurants, restaurant]);
         setName("");
         setDescription("");
     }
