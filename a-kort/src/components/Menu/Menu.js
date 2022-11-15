@@ -1,7 +1,7 @@
 import UserHeader from "./UserHeader";
 import "../../styles/Menu/Menu.scss"
 import Dish from "./Dish";
-import {getData} from "../Admin/MenuChanger/MenuChanger";
+import {getDishes} from "../Admin/MenuChanger/MenuChanger";
 import {useEffect, useState} from "react";
 
 export default function Menu(){
@@ -15,7 +15,7 @@ export default function Menu(){
             setCategories(categories);
             setDishes(dishes)
         }
-        getData().then((v) => setData(v[0], v[1]))
+        getDishes().then((v) => setData(v[0], v[1]))
     }, [])
 
     const [allDishes, setAllDishes] = useState([])

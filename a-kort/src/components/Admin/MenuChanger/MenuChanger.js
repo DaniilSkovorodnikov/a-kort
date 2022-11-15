@@ -4,7 +4,7 @@ import React, {useEffect, useState} from "react";
 import Category from "./Category";
 import MenuHeader from "../AdminMenu/MenuHeader";
 
-export async function getData(name, location){
+export async function getDishes(name, location){
     const initialCategories = [];
     const initialDishes = [];
     const data = await fetch(`http://127.0.0.1:8000/get_restaurant_dishes/?name=${name}&address=${location}`)
@@ -30,7 +30,7 @@ export default function MenuChanger({currentRestaurant}){
             setCategories(categories);
             setInitialCategoryDishes([...dishes])
         }
-        getData(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
+        getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
     }, [])
 
     const [visibleCategoryAdder, setVisibleCategoryAdder] = useState(false);
