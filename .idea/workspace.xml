@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix restaurant menu">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix immediately invoked renders">
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,14 +98,7 @@
       <workItem from="1668257525780" duration="443000" />
       <workItem from="1668358181091" duration="5000" />
       <workItem from="1668442338260" duration="345000" />
-      <workItem from="1668502682771" duration="15862000" />
-    </task>
-    <task id="LOCAL-00003" summary="Updated menu changer">
-      <created>1667428222515</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1667428222515</updated>
+      <workItem from="1668502682771" duration="16307000" />
     </task>
     <task id="LOCAL-00004" summary="Remove warnings">
       <created>1667428322882</created>
@@ -442,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668520249140</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Fix immediately invoked renders">
+      <created>1668520696469</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1668520696469</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add fetch add_dish" />
     <MESSAGE value="Add test fetch" />
     <MESSAGE value="Fix add_dish fetch" />
     <MESSAGE value="Fix" />
@@ -485,6 +485,7 @@
     <MESSAGE value="Add routing" />
     <MESSAGE value="Add a restaurant menu for admin" />
     <MESSAGE value="Fix restaurant menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix restaurant menu" />
+    <MESSAGE value="Fix immediately invoked renders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix immediately invoked renders" />
   </component>
 </project>

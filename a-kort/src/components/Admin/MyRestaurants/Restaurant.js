@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import React, {useContext} from "react";
 import {RestaurantsContext} from "./MyRestaurants";
 
-export default function Restaurant({name, location, id, setId}){
+export default function Restaurant({name, location, id}){
     const {restaurants, setCurrentRestaurant} = useContext(RestaurantsContext)
 
     return (
@@ -12,7 +12,7 @@ export default function Restaurant({name, location, id, setId}){
                     <p className="restaurant__location">{location}</p>
                 </div>
                 <ul className="restaurant__links">
-                    <Link onClick={() => setId(id)}>Перейти в панель заказов</Link>
+                    <Link>Перейти в панель заказов</Link>
                     <Link to="/menu-changer" onClick={() => setCurrentRestaurant(restaurants[id])}>Полное меню</Link>
                 </ul>
             </div>

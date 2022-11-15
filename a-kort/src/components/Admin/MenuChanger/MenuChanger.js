@@ -7,8 +7,8 @@ import MenuHeader from "../AdminMenu/MenuHeader";
 export async function getData(name, location){
     const initialCategories = [];
     const initialDishes = [];
-    const data = await fetch("http://127.0.0.1:8000/get_dishes/",{
-        method: "POST",
+    const data = await fetch("http://127.0.0.1:8000/get_restaurant_dishes/",{
+        method: "GET",
         body: {name, location}
     });
     const res = await data.json();

@@ -9,9 +9,6 @@ export const RestaurantsContext = createContext()
 export default function MyRestaurants({setCurrentRestaurant}){
     const [visible, setVisible] = useState(false);
 
-
-    const [restaurantId, setRestaurantId] = useState(0);
-
     const [name, setName] = useState("");
     const [img, setImg] = useState();
     const [location, setLocation] = useState("");
@@ -101,7 +98,6 @@ export default function MyRestaurants({setCurrentRestaurant}){
                         name={v.name}
                         location={v.location}
                         id={i}
-                        setId={setRestaurantId}
                         key={i}
                     />)}
                 </ul>
