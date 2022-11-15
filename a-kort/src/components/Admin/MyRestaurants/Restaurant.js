@@ -12,8 +12,8 @@ export default function Restaurant({name, location, id, setId}){
                     <p className="restaurant__location">{location}</p>
                 </div>
                 <ul className="restaurant__links">
-                    <Link onClick={setId(id)}>Перейти в панель заказов</Link>
-                    <Link to="/menu-changer" onClick={setCurrentRestaurant(restaurants[id])}>Полное меню</Link>
+                    <Link onClick={() => setId(id)}>Перейти в панель заказов</Link>
+                    <Link to="/menu-changer" onClick={() => setCurrentRestaurant(restaurants[id])}>Полное меню</Link>
                 </ul>
             </div>
     );
