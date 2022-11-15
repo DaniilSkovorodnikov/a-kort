@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix add dishes in user menu">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add routing">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/MenuHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminPanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/styles/Modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/styles/MyRestaurants.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/AdminDish.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/AdminDish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/MenuChangerHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/MenuChangerComponents/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/AdminHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +69,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\Admin" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\img" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\AdminMenu" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\MenuChangerComponents" />
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -93,7 +111,11 @@
       <workItem from="1667813542536" duration="14746000" />
       <workItem from="1667904251179" duration="39000" />
       <workItem from="1667975018434" duration="378000" />
-      <workItem from="1668065621884" duration="8541000" />
+      <workItem from="1668065621884" duration="8884000" />
+      <workItem from="1668257525780" duration="443000" />
+      <workItem from="1668358181091" duration="5000" />
+      <workItem from="1668442338260" duration="345000" />
+      <workItem from="1668502682771" duration="15147000" />
     </task>
     <task id="LOCAL-00001" summary="Add a project">
       <created>1667309780278</created>
@@ -424,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668073808424</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Add routing">
+      <created>1668074306482</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1668074306482</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remove warnings" />
     <MESSAGE value="Add a dish changer" />
     <MESSAGE value="Add a photo's" />
     <MESSAGE value="Add fetch add_dish" />
@@ -467,6 +495,7 @@
     <MESSAGE value="Fix user menu" />
     <MESSAGE value="Fix styles" />
     <MESSAGE value="Fix add dishes in user menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix add dishes in user menu" />
+    <MESSAGE value="Add routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add routing" />
   </component>
 </project>

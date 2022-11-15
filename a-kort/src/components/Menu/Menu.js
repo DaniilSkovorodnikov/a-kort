@@ -1,7 +1,7 @@
 import UserHeader from "./UserHeader";
 import "../../styles/Menu/Menu.scss"
 import Dish from "./Dish";
-import {getData} from "../MenuChangerComponents/MenuChanger";
+import {getData} from "../Admin/MenuChanger/MenuChanger";
 import {useEffect, useState} from "react";
 
 export default function Menu(){

@@ -1,6 +1,6 @@
 
 export default function Modal({visible, setVisible, children}){
-    const classes = ["category-adder"]
+    const classes = ["modal"]
     if (visible){
         classes.push("active")
     }

@@ -1,0 +1,87 @@
+.my-restaurants{
+  width: 65%;
+  margin: 70px auto 0;
+}
+
+.restaurant{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+
+  &__name{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 43px;
+  }
+
+  &__location{
+    color: #717171;
+  }
+
+  &__links{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.restaurant-adder{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 50%;
+  height: 365px;
+  background-color: white;
+  margin: auto;
+  padding: 30px;
+
+  &__img{
+    width: 100%;
+    height: 200px;
+  }
+
+  &__name{
+    height: 45px;
+    font-size: 22px;
+    padding: 0 18px;
+  }
+
+  &__location{
+    height: 45px;
+    font-size: 22px;
+    padding: 0 18px;
+    font-family: "Mulish", sans-serif;
+
+    option[disabled]{
+      opacity: 0.6;
+    }
+  }
+
+  &__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-items: center;
+  }
+
+  &__description{
+    flex-grow: 1;
+    font-size: 18px;
+  }
+
+  &__add-btn{
+    height: 40px;
+  }
+}

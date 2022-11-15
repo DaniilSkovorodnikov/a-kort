@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import Modal from "./Modal";
+import Modal from "../AdminMenu/Modal";
 
 export default function AdminDish({name, price, photo, description, categoryDishes, updateCategoryDishes}){
     const [prev_name, setPrevName] = useState(name)
@@ -16,9 +16,9 @@ export default function AdminDish({name, price, photo, description, categoryDish
 
 
     const fileReader = new FileReader();
-    fileReader.onloadend = () => {
-        setImg(fileReader.result)
-    }
+        fileReader.onloadend = () => {
+            setImg(fileReader.result)
+        }
 
     function updateDish(){
         const dish = {

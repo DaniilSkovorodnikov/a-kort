@@ -1,5 +1,5 @@
 import AdminDish from "./AdminDish";
-import Modal from "./Modal";
+import Modal from "../AdminMenu/Modal";
 import {useState} from "react";
 
 export default function Category({name, id, dishes}){
