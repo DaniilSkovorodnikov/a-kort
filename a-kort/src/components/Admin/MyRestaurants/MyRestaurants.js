@@ -1,7 +1,7 @@
 import "../../../styles/MyRestaurants.scss"
 import MenuHeader from "../AdminMenu/MenuHeader";
 import Restaurant from "./Restaurant";
-import {createContext, useContext, useState} from "react";
+import {createContext, useState} from "react";
 import Modal from "../AdminMenu/Modal";
 
 export const RestaurantsContext = createContext()
@@ -31,6 +31,10 @@ export default function MyRestaurants({setCurrentRestaurant}){
             img
         }
         fetch("http://127.0.0.1:8000/create_restaurant/",{
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
             method: "POST",
             body: JSON.stringify(newRestaurant)
         })

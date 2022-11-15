@@ -2,7 +2,7 @@ import Header from "./MenuChanger/Header";
 import {Link, Route, Routes} from "react-router-dom";
 import MyRestaurants from "./MyRestaurants/MyRestaurants";
 import MenuChanger from "./MenuChanger/MenuChanger";
-import React, {createContext, useState} from "react";
+import React, {useState} from "react";
 
 export default function AdminPanel(){
     const [currentRestaurant, setCurrentRestaurant] = useState({});
