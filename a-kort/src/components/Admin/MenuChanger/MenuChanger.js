@@ -69,6 +69,8 @@ export default function MenuChanger({currentRestaurant}){
                                          id={index}
                                          key={index}
                                          dishes={initialCategoryDishes[index] === undefined ? [] : initialCategoryDishes[index]}
+                                         restaurantName={currentRestaurant.name}
+                                         restaurantLocation={currentRestaurant.location}
                         />
                     })}
                 </div>

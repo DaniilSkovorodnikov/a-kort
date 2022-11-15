@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix fetch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,14 +99,7 @@
       <workItem from="1668257525780" duration="443000" />
       <workItem from="1668358181091" duration="5000" />
       <workItem from="1668442338260" duration="345000" />
-      <workItem from="1668502682771" duration="16613000" />
-    </task>
-    <task id="LOCAL-00005" summary="Add a dish changer">
-      <created>1667466951682</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1667466951682</updated>
+      <workItem from="1668502682771" duration="17342000" />
     </task>
     <task id="LOCAL-00006" summary="Add a photo's">
       <created>1667468012298</created>
@@ -442,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668521135303</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Fix fetch">
+      <created>1668521247008</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1668521247008</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -2,7 +2,7 @@ import AdminDish from "./AdminDish";
 import Modal from "../AdminMenu/Modal";
 import {useState} from "react";
 
-export default function Category({name, id, dishes}){
+export default function Category({name, id, dishes, restaurantName, restaurantLocation}){
     const index = id
     const categoryName = name
 
@@ -28,7 +28,9 @@ export default function Category({name, id, dishes}){
             dish_price,
             dish_description,
             dish_image,
-            dish_category: categoryName
+            dish_category: categoryName,
+            restaurant_name: restaurantName,
+            restaurant_location: restaurantLocation
         }
         fetch("http://127.0.0.1:8000/add_dish/", {
             headers: {
