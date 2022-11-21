@@ -34,7 +34,7 @@ export default function MenuChanger(){
             setInitialCategoryDishes([...dishes])
         }
         const setRestaurant = async () => {
-            setCurrentRestaurant(JSON.parse(sessionStorage.getItem('currentRestaurant')));
+            await setCurrentRestaurant(JSON.parse(sessionStorage.getItem('currentRestaurant')));
         }
         setRestaurant()
             .then(() => getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1])))
