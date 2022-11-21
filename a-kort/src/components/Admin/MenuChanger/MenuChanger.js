@@ -1,8 +1,9 @@
 import '../../../styles/MenuChanger.scss'
 import Modal from "../AdminMenu/Modal";
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Category from "./Category";
 import MenuHeader from "../AdminMenu/MenuHeader";
+
 
 export async function getDishes(name, location){
     const initialCategories = [];
@@ -24,7 +25,12 @@ export async function getDishes(name, location){
     return [initialCategories, initialDishes]
 }
 
-export default function MenuChanger({currentRestaurant}){
+export default function MenuChanger(){
+    const [currentRestaurant, setCurrentRestaurant] = useState({});
+    useEffect(() => {
+        setCurrentRestaurant(JSON.parse(sessionStorage.getItem('currentRestaurant')));
+    }, [])
+
     useEffect(() => {
         const setData = (categories, dishes) =>{
             setCategories(categories);

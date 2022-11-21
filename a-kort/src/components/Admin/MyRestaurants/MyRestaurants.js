@@ -4,15 +4,14 @@ import Restaurant from "./Restaurant";
 import {createContext, useEffect, useState} from "react";
 import Modal from "../AdminMenu/Modal";
 
-export const RestaurantsContext = createContext()
-
 async function getRestaurants(){
     const data = await fetch(`http://127.0.0.1:8000/get_all_restaurants`);
     const res = await data.json();
     return [...res["restaurants"]]
 }
 
-export default function MyRestaurants({setCurrentRestaurant}){
+
+export default function MyRestaurants(){
     useEffect(() => {
         const setData = (restaurants) => {
             setRestaurants(restaurants)
@@ -21,6 +20,8 @@ export default function MyRestaurants({setCurrentRestaurant}){
     }, [])
 
     const [visible, setVisible] = useState(false);
+
+
 
     const [name, setName] = useState("");
     const [img, setImg] = useState();
@@ -57,7 +58,6 @@ export default function MyRestaurants({setCurrentRestaurant}){
     }
 
     return (
-        <RestaurantsContext.Provider value={{restaurants, setCurrentRestaurant}}>
             <div className="my-restaurants">
                 <Modal visible={visible} setVisible={setVisible}>
                     <div className="restaurant-adder" onClick={(event) => event.stopPropagation()}>
@@ -112,10 +112,10 @@ export default function MyRestaurants({setCurrentRestaurant}){
                         location={v.location}
                         id={i}
                         key={i}
+                        restaurants={restaurants}
                     />)}
                 </ul>
             </div>
-        </RestaurantsContext.Provider>
 
     );
 }
