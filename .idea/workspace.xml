@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Change restaurant styles" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Change menu header styles">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/AdminRestaurant.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserRestaurant.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/img/rating-star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/MenuHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/MenuHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/Modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/AdminDish.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/AdminDish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/AdminRestaurants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Menu/Dish.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Menu/UserHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/AdminHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Admin/AdminHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Admin/MenuChanger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MyRestaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Admin/MyRestaurants.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/UserHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/UserHeader.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -49,11 +75,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\Admin" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\img" />
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\AdminMenu" />
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles" />
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\MenuChangerComponents" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles\User" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles\Admin" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\Admin" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\User" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -99,14 +125,7 @@
       <workItem from="1668606088444" duration="696000" />
       <workItem from="1668619482840" duration="17000" />
       <workItem from="1668977527876" duration="2102000" />
-      <workItem from="1669030263738" duration="1630000" />
-    </task>
-    <task id="LOCAL-00015" summary="Fix get_dishes func">
-      <created>1667478854980</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1667478854980</updated>
+      <workItem from="1669030263738" duration="5779000" />
     </task>
     <task id="LOCAL-00016" summary="Update getDishes">
       <created>1667479274368</created>
@@ -444,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669031897975</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Change menu header styles">
+      <created>1669032196514</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1669032196514</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix get_dishes func" />
     <MESSAGE value="Update getDishes" />
     <MESSAGE value="Fix getDishes" />
     <MESSAGE value="Add bad fetch" />
@@ -487,6 +512,7 @@
     <MESSAGE value="Fix warnings" />
     <MESSAGE value="Fix menuChanger" />
     <MESSAGE value="Change restaurant styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change restaurant styles" />
+    <MESSAGE value="Change menu header styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change menu header styles" />
   </component>
 </project>

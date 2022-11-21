@@ -1,4 +1,4 @@
-import '../../../styles/MenuChanger.scss'
+import '../../../styles/Admin/MenuChanger.scss'
 import Modal from "../AdminMenu/Modal";
 import React, {useEffect, useState} from "react";
 import Category from "./Category";

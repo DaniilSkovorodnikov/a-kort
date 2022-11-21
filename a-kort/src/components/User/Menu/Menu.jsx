@@ -1,7 +1,7 @@
-import UserHeader from "./UserHeader";
-import "../../styles/Menu/Menu.scss"
+import UserHeader from "../UserHeader";
+import "../../../styles/User/Menu/Menu.scss"
 import Dish from "./Dish";
-import {getDishes} from "../Admin/MenuChanger/MenuChanger";
+import {getDishes} from "../../Admin/MenuChanger/MenuChanger";
 import {useEffect, useState} from "react";
 
 export default function Menu(){
@@ -25,7 +25,9 @@ export default function Menu(){
 
     return (
         <div>
-            <UserHeader/>
+            <UserHeader>
+                <p className="user-header__location">Гринвич, 1 очередь</p>
+            </UserHeader>
             <div className="user-menu">
                 <ul className="categories">
                     <li className="categories__item">

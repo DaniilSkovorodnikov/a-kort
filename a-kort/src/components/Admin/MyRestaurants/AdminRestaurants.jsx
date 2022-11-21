@@ -1,6 +1,6 @@
-import "../../../styles/MyRestaurants.scss"
+import "../../../styles/Admin/MyRestaurants.scss"
 import MenuHeader from "../AdminMenu/MenuHeader";
-import Restaurant from "./Restaurant";
+import AdminRestaurant from "./AdminRestaurant";
 import {useEffect, useState} from "react";
 import Modal from "../AdminMenu/Modal";
 
@@ -11,7 +11,7 @@ async function getRestaurants(){
 }
 
 
-export default function MyRestaurants(){
+export default function AdminRestaurants(){
     useEffect(() => {
         const setData = (restaurants) => {
             setRestaurants(restaurants)
@@ -107,7 +107,7 @@ export default function MyRestaurants(){
                     <button onClick={() => setVisible(true)} className="menu-header__add-btn">Добавить точку</button>
                 </MenuHeader>
                 <ul className="restaurant-list">
-                    {restaurants.map((v,i) => <Restaurant
+                    {restaurants.map((v,i) => <AdminRestaurant
                         name={v.name}
                         location={v.location}
                         id={i}
