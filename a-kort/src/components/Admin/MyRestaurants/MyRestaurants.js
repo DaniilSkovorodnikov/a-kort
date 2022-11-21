@@ -1,7 +1,7 @@
 import "../../../styles/MyRestaurants.scss"
 import MenuHeader from "../AdminMenu/MenuHeader";
 import Restaurant from "./Restaurant";
-import {createContext, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import Modal from "../AdminMenu/Modal";
 
 async function getRestaurants(){
