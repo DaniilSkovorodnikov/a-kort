@@ -33,8 +33,11 @@ export default function MenuChanger(){
             setCategories(categories);
             setInitialCategoryDishes([...dishes])
         }
-        setCurrentRestaurant(JSON.parse(sessionStorage.getItem('currentRestaurant')));
-        getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
+        const setRestaurant = async () => {
+            setCurrentRestaurant(JSON.parse(sessionStorage.getItem('currentRestaurant')));
+        }
+        setRestaurant()
+            .then(() => getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1])))
     }, [])
 
     const [visibleCategoryAdder, setVisibleCategoryAdder] = useState(false);
