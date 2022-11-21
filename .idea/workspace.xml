@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix menuChanger">
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/MyRestaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/MyRestaurants.scss" afterDir="false" />
-    </list>
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Change restaurant styles" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,14 +99,7 @@
       <workItem from="1668606088444" duration="696000" />
       <workItem from="1668619482840" duration="17000" />
       <workItem from="1668977527876" duration="2102000" />
-      <workItem from="1669030263738" duration="1307000" />
-    </task>
-    <task id="LOCAL-00014" summary="Fix get_dishes func">
-      <created>1667478783215</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1667478783215</updated>
+      <workItem from="1669030263738" duration="1630000" />
     </task>
     <task id="LOCAL-00015" summary="Fix get_dishes func">
       <created>1667478854980</created>
@@ -447,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669031341768</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Change restaurant styles">
+      <created>1669031897975</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1669031897975</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add get_dishes func" />
     <MESSAGE value="Fix get_dishes func" />
     <MESSAGE value="Update getDishes" />
     <MESSAGE value="Fix getDishes" />
@@ -490,6 +486,7 @@
     <MESSAGE value="Fix nebuChanger" />
     <MESSAGE value="Fix warnings" />
     <MESSAGE value="Fix menuChanger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix menuChanger" />
+    <MESSAGE value="Change restaurant styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change restaurant styles" />
   </component>
 </project>
