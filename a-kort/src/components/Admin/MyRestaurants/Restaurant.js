@@ -10,9 +10,11 @@ export default function Restaurant({name, location, id, restaurants}){
                     <p className="restaurant__location">{location}</p>
                 </div>
                 <ul className="restaurant__links">
-                    <Link>Перейти в панель заказов</Link>
-                    <Link to="/menu-changer" onClick={() => sessionStorage.setItem('currentRestaurant',
-                        JSON.stringify({name, location}))}>Полное меню</Link>
+                    <Link className="restaurant__link">Перейти в панель заказов</Link>
+                    <Link to="/menu-changer"
+                          onClick={() => sessionStorage.setItem('currentRestaurant', JSON.stringify({name, location}))}
+                          className="restaurant__link"
+                    >Полное меню</Link>
                 </ul>
             </div>
     );

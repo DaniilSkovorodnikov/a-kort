@@ -25,8 +25,21 @@
   }
 
   &__links{
+    margin-top: auto;
     display: flex;
     flex-direction: column;
+  }
+
+  &__link{
+    width: 195px;
+    height: 43px;
+    color: white;
+    background-color: #717171;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
