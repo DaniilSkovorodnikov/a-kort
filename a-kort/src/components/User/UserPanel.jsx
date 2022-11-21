@@ -33,7 +33,7 @@ export default function UserPanel(){
         </UserHeader>
 
         <ul className="restaurants">
-            {restaurants.map((v,i) => <UserRestaurant name={v.name}
+            {restaurants.map((v) => <UserRestaurant name={v.name}
                                                       rating={v.rating}
                                                       photo={`http://127.0.0.1:8000/get_image/?image=${v.img}`}
             />)}

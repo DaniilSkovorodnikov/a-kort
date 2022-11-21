@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add foodcourt functional">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add img on restaurants">
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,14 +102,7 @@
       <workItem from="1668606088444" duration="696000" />
       <workItem from="1668619482840" duration="17000" />
       <workItem from="1668977527876" duration="2102000" />
-      <workItem from="1669030263738" duration="6590000" />
-    </task>
-    <task id="LOCAL-00017" summary="Fix getDishes">
-      <created>1667479622047</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1667479622047</updated>
+      <workItem from="1669030263738" duration="6771000" />
     </task>
     <task id="LOCAL-00018" summary="Fix getDishes">
       <created>1667479713596</created>
@@ -448,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669036174860</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Add img on restaurants">
+      <created>1669036958920</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1669036958920</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix getDishes" />
     <MESSAGE value="Add bad fetch" />
     <MESSAGE value="Fix architecture" />
     <MESSAGE value="Add get iamge" />
@@ -491,6 +489,7 @@
     <MESSAGE value="Change restaurant styles" />
     <MESSAGE value="Change menu header styles" />
     <MESSAGE value="Add foodcourt functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add foodcourt functional" />
+    <MESSAGE value="Add img on restaurants" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add img on restaurants" />
   </component>
 </project>
