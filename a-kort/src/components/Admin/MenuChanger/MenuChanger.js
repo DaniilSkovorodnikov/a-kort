@@ -26,18 +26,15 @@ export async function getDishes(name, location){
 }
 
 export default function MenuChanger(){
-    const [currentRestaurant, setCurrentRestaurant] = useState({});
+    const [currentRestaurant] = useState(JSON.parse(sessionStorage.getItem('currentRestaurant')));
 
     useEffect(() => {
         const setData = (categories, dishes) =>{
             setCategories(categories);
             setInitialCategoryDishes([...dishes])
         }
-        const setRestaurant = async () => {
-            await setCurrentRestaurant(JSON.parse(sessionStorage.getItem('currentRestaurant')));
-        }
-        setRestaurant()
-            .then(() => getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1])))
+
+        getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]));
     }, [])
 
     const [visibleCategoryAdder, setVisibleCategoryAdder] = useState(false);

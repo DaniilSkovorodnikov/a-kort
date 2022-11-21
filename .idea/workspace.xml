@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add getting all restaurants fetch">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix menuChanger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/MyRestaurants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/Restaurant.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,41 +102,7 @@
       <workItem from="1668606088444" duration="696000" />
       <workItem from="1668619482840" duration="17000" />
       <workItem from="1668977527876" duration="2102000" />
-    </task>
-    <task id="LOCAL-00008" summary="Add test fetch">
-      <created>1667475059053</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1667475059053</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Fix add_dish fetch">
-      <created>1667476257726</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1667476257726</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fix">
-      <created>1667476501406</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1667476501406</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Fix fetches">
-      <created>1667477657137</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1667477657137</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Add get_dishes func">
-      <created>1667478547808</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1667478547808</updated>
+      <workItem from="1669030263738" duration="1008000" />
     </task>
     <task id="LOCAL-00013" summary="Fix get_dishes func">
       <created>1667478673095</created>
@@ -450,7 +412,42 @@
       <option name="project" value="LOCAL" />
       <updated>1668522582901</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Fix nebuChanger">
+      <created>1669030498662</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1669030498663</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fix warnings">
+      <created>1669030548414</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1669030548414</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Fix menuChanger">
+      <created>1669030703669</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1669030703669</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Fix menuChanger">
+      <created>1669031059027</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1669031059027</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Fix menuChanger">
+      <created>1669031070477</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1669031070477</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,9 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix add_dish fetch" />
-    <MESSAGE value="Fix" />
-    <MESSAGE value="Fix fetches" />
     <MESSAGE value="Add get_dishes func" />
     <MESSAGE value="Fix get_dishes func" />
     <MESSAGE value="Update getDishes" />
@@ -493,6 +487,9 @@
     <MESSAGE value="Fix immediately invoked renders" />
     <MESSAGE value="Fix fetch" />
     <MESSAGE value="Add getting all restaurants fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add getting all restaurants fetch" />
+    <MESSAGE value="Fix nebuChanger" />
+    <MESSAGE value="Fix warnings" />
+    <MESSAGE value="Fix menuChanger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix menuChanger" />
   </component>
 </project>
