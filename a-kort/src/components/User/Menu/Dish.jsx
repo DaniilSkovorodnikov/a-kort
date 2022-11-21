@@ -1,5 +1,3 @@
-
-
 export default function Dish({name, price, photo}){
     return (
         <li className="user-dish">
