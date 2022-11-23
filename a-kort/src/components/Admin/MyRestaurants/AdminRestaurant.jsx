@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
-import React from "react";
+import React, {useContext} from "react";
+import {UserContext} from "../../User/UserPanel";
 
-export default function AdminRestaurant({name, location, id, restaurants}){
-
+export default function AdminRestaurant({name, location}){
     return (
             <div className="admin-restaurant">
                 <div className="admin-restaurant__about">

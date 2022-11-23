@@ -12,7 +12,7 @@ export default function App() {
             <Link to="user">Пользовательская сторона</Link>
             <Link to="admin">Админка</Link>
             <Routes>
-                <Route path="/user" element={<UserPanel/>}/>
+                <Route path="/user/*" element={<UserPanel/>}/>
                 <Route path="/admin/*" element={<AdminPanel/>}/>
             </Routes>
         </div>
