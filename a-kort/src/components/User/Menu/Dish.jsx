@@ -15,10 +15,16 @@ export default function Dish({name, price, photo, description, setVisibleDishDes
 
     return (
         <li className="user-dish"
-            onMouseEnter={() => setVisibleBtn(true)}
-            onMouseLeave={() => setVisibleBtn(false)}
+            onMouseEnter={() => {
+                setVisibleBtn(true);
+                setVisibleDescription(true);
+            }}
+            onMouseLeave={() => {
+                setVisibleBtn(false);
+                setVisibleDescription(false);
+            }}
             onClick={() => {
-                setCurrentDish({name, price, photo, description})
+                setCurrentDish({name, price, photo, description});
                 setVisibleDishDesc(true);
             }}
         >
