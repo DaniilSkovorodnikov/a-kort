@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add sending order">
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Order.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix fetch">
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Admin/Orders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Admin/Orders.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Basket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Basket.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,35 +104,7 @@
       <workItem from="1669030263738" duration="7588000" />
       <workItem from="1669204090832" duration="86000" />
       <workItem from="1669220403999" duration="10135000" />
-      <workItem from="1669269341545" duration="12963000" />
-    </task>
-    <task id="LOCAL-00034" summary="Add get dishes in user menu">
-      <created>1668070703130</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1668070703130</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Fix user menu">
-      <created>1668071203010</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1668071203010</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Fix user menu">
-      <created>1668071596940</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1668071596940</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Fix user menu">
-      <created>1668071681423</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1668071681423</updated>
+      <workItem from="1669269341545" duration="14501000" />
     </task>
     <task id="LOCAL-00038" summary="Fix user menu">
       <created>1668071740604</created>
@@ -455,7 +421,35 @@
       <option name="project" value="LOCAL" />
       <updated>1669280739575</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Add getting order">
+      <created>1669283212805</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1669283212805</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Fix fetch">
+      <created>1669283321618</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1669283321618</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Fix fetch">
+      <created>1669283406045</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1669283406046</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Fix fetch">
+      <created>1669283718357</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1669283718357</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add delete fetch" />
     <MESSAGE value="Add user menu" />
     <MESSAGE value="Add get dishes in user menu" />
     <MESSAGE value="Fix user menu" />
@@ -483,7 +476,6 @@
     <MESSAGE value="Add a restaurant menu for admin" />
     <MESSAGE value="Fix restaurant menu" />
     <MESSAGE value="Fix immediately invoked renders" />
-    <MESSAGE value="Fix fetch" />
     <MESSAGE value="Add getting all restaurants fetch" />
     <MESSAGE value="Fix nebuChanger" />
     <MESSAGE value="Fix warnings" />
@@ -498,6 +490,8 @@
     <MESSAGE value="Add dish description" />
     <MESSAGE value="Fix dish description" />
     <MESSAGE value="Add sending order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sending order" />
+    <MESSAGE value="Add getting order" />
+    <MESSAGE value="Fix fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix fetch" />
   </component>
 </project>

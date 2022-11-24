@@ -24,7 +24,7 @@ export default function Orders(){
                 <p className="orders__restaurant-location">{currentRestaurant.location}</p>
             </div>
             <ul className="orders__list">
-                {orders.map((v,i) => <Order id={v.number} dishes={v.dishes}/>)}
+                {orders.map((v,i) => <Order id={v.id} dishes={v.dishes}/>)}
             </ul>
         </div>
     )
