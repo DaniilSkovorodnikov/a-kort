@@ -2,6 +2,7 @@ import AdminHeader from "./AdminHeader";
 import {Link, Route, Routes} from "react-router-dom";
 import AdminRestaurants from "./MyRestaurants/AdminRestaurants";
 import MenuChanger from "./MenuChanger/MenuChanger";
+import Orders from "./Orders/Orders";
 
 export default function AdminPanel(){
 
@@ -14,6 +15,7 @@ export default function AdminPanel(){
                 <Routes>
                     <Route path="my-restaurants" element={<AdminRestaurants/>}/>
                     <Route path="menu-changer" element={<MenuChanger/>}/>
+                    <Route path="orders" element={<Orders/>}/>
                 </Routes>
             </div>
     );

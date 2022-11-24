@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
-import React, {useContext} from "react";
-import {UserContext} from "../../User/UserPanel";
+import React from "react";
 
 export default function AdminRestaurant({name, location}){
     return (
@@ -10,7 +9,10 @@ export default function AdminRestaurant({name, location}){
                     <p className="admin-restaurant__location">{location}</p>
                 </div>
                 <ul className="admin-restaurant__links">
-                    <Link className="admin-restaurant__link">Перейти в панель заказов</Link>
+                    <Link to="/admin/orders"
+                          onClick={() => sessionStorage.setItem('currentRestaurant', JSON.stringify({name, location}))}
+                          className="admin-restaurant__link"
+                    >Перейти в панель заказов</Link>
                     <Link to="/admin/menu-changer"
                           onClick={() => sessionStorage.setItem('currentRestaurant', JSON.stringify({name, location}))}
                           className="admin-restaurant__link"

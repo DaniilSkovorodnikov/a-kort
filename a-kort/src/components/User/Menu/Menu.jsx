@@ -19,21 +19,42 @@ export default function Menu(){
         getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
     }, [])
 
-    const [dishesInCategory, setDishesInCategory] = useState([
-        [{
-            dish_name: "Чизбургер",
-            dish_price: 59,
-            dish_description: "Стоит хуйня, маленький, зато вкусный, стоит брать не меньше двух",
-            dish_image: ""
-        }]
-    ])
+    const [dishesInCategory, setDishesInCategory] = useState([])
     const [categories, setCategories] = useState([])
     const [currentCategory, setCurrentCategory] = useState(-1)
 
     const [cartDishes, setCartDishes] = useState([]);
+    const [allCartDishes, setAllCartDishes] = useState(JSON.parse(sessionStorage.getItem('cart')) ?? [])
     function addInCart(dish){
-        setCartDishes([...cartDishes, dish])
+        setCartDishes([...cartDishes, dish]);
     }
+
+    useEffect(() => {
+        const cart = JSON.parse(sessionStorage.getItem('cart')) ?? [];
+        const dish = cartDishes[cartDishes.length - 1];
+        if(dish){
+            let counter = 0;
+            let cartContainsDish = false;
+            for (const el of cart) {
+                if (dish.name === el.dish.name && currentRestaurant.name === el.restaurantName) {
+                    cart[counter].count++;
+                    cartContainsDish = true;
+                }
+                counter++;
+            }
+            if (!cartContainsDish) {
+                cart.push({
+                    dish,
+                    count: 1,
+                    restaurantName: currentRestaurant.name,
+                    restaurantLocation: currentRestaurant.location
+                })
+            }
+            sessionStorage.setItem('cart', JSON.stringify(cart))
+            setAllCartDishes(cart);
+        }
+    }, [cartDishes])
+
     function sendOrder(){
         fetch("http://127.0.0.1:8000/create_order/", {
             headers: {
@@ -47,8 +68,6 @@ export default function Menu(){
                 "dishes": cartDishes
             })
         })
-            .then((res) => res.json())
-            .then((v) => console.log(v))
             .catch((err) => console.log(err))
     }
 
@@ -102,7 +121,7 @@ export default function Menu(){
                         }
                     </ul>
                 </div>
-                <Cart dishes={cartDishes} sendOrder={sendOrder}/>
+                <Cart cartDishes={allCartDishes} sendOrder={sendOrder}/>
             </div>
             <Modal visible={visibleDishDesc} setVisible={setVisibleDishDesc}>
                 <div className="dish-description" onClick={(e) => {e.stopPropagation()}}>
