@@ -7,6 +7,66 @@
 
   &__header{
     width: 100%;
-    height: 87px;
+    margin: 40px 35px;
+  }
+
+  &__restaurant-name{
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  &__restaurant-location{
+    font-size: 20px;
+    line-height: 25px;
+    color: #989898;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.order{
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__id{
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  &__btn{
+    width: 230px;
+    height: 40px;
+    background-color: #717171;
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &__dishes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__dish{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 30px 0 13px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #b6b6b6;
   }
 }

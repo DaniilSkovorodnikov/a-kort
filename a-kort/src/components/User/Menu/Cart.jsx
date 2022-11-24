@@ -1,8 +1,12 @@
-export default function Cart({cartDishes, sendOrder}){
+export default function Cart({cartDishes, sendOrder, clear}){
 
     return (
         <div className="cart">
-            <h2 className="cart__title">Корзина</h2>
+            <div className="cart__header">
+                <h2 className="cart__title">Корзина</h2>
+                <button className="cart__clear-btn" onClick={() => {clear()}}>Очистить корзину</button>
+            </div>
+
             <ul className="cart__dishes">
                 {
                     cartDishes.length > 0 ?

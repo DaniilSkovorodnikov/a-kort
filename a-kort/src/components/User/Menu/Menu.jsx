@@ -29,6 +29,11 @@ export default function Menu(){
         setCartDishes([...cartDishes, dish]);
     }
 
+    function clearCart(){
+        sessionStorage.setItem('cart', JSON.stringify([]))
+        setAllCartDishes([])
+    }
+
     useEffect(() => {
         const cart = JSON.parse(sessionStorage.getItem('cart')) ?? [];
         const dish = cartDishes[cartDishes.length - 1];
@@ -119,7 +124,7 @@ export default function Menu(){
                         }
                     </ul>
                 </div>
-                <Cart cartDishes={allCartDishes} sendOrder={sendOrder}/>
+                <Cart cartDishes={allCartDishes} sendOrder={sendOrder} clear={clearCart}/>
             </div>
             <Modal visible={visibleDishDesc} setVisible={setVisibleDishDesc}>
                 <div className="dish-description" onClick={(e) => {e.stopPropagation()}}>
