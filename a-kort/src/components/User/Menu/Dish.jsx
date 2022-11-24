@@ -30,8 +30,8 @@ export default function Dish({name, price, photo, description, setVisibleDishDes
         >
             <img src={photo} className="user-dish__photo" alt=""></img>
             <h2 className="user-dish__name">{name}</h2>
-            <p className="user-dish__price">{price} <span>&#8381;</span></p>
             <p className={descriptionClasses.join(' ')}>{description}</p>
+            <p className="user-dish__price">{price} <span>&#8381;</span></p>
             <button
                 className={btnClasses.join(' ')}
                 onClick={(e) => {
