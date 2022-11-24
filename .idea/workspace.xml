@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add dish description">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix dish description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,21 +107,7 @@
       <workItem from="1669030263738" duration="7588000" />
       <workItem from="1669204090832" duration="86000" />
       <workItem from="1669220403999" duration="10135000" />
-      <workItem from="1669269341545" duration="2197000" />
-    </task>
-    <task id="LOCAL-00029" summary="Fix get iamge">
-      <created>1667826334877</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1667826334877</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Add delete dish">
-      <created>1667828836812</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1667828836812</updated>
+      <workItem from="1669269341545" duration="3488000" />
     </task>
     <task id="LOCAL-00031" summary="Fix warning">
       <created>1667828873458</created>
@@ -452,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669270926876</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Add dish description">
+      <created>1669271809222</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1669271809222</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Fix dish description">
+      <created>1669271858172</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1669271858172</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add delete dish" />
     <MESSAGE value="Fix warning" />
     <MESSAGE value="Add delete fetch" />
     <MESSAGE value="Add user menu" />
@@ -495,6 +494,7 @@
     <MESSAGE value="Add user menu, modal dishes and cart" />
     <MESSAGE value="Delete mok's" />
     <MESSAGE value="Add dish description" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dish description" />
+    <MESSAGE value="Fix dish description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix dish description" />
   </component>
 </project>

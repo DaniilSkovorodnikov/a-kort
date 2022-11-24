@@ -1,4 +1,4 @@
-export default function Cart({dishes}){
+export default function Cart({dishes, sendOrder}){
     return (
         <div className="cart">
             <h2 className="cart__title">Корзина</h2>
@@ -7,7 +7,7 @@ export default function Cart({dishes}){
                     {v.name} - {v.price} <span>&#8381;</span>
                 </li>)}
             </ul>
-            <button className="cart__send-btn">Оформить заказ</button>
+            <button className="cart__send-btn" onClick={() => sendOrder()}>Оформить заказ</button>
         </div>
     )
 }

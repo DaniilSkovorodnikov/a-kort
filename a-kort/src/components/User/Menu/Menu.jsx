@@ -34,6 +34,23 @@ export default function Menu(){
     function addInCart(dish){
         setCartDishes([...cartDishes, dish])
     }
+    function sendOrder(){
+        fetch("http://127.0.0.1:8000/create_order/", {
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            method: "POST",
+            body: JSON.stringify({
+                restaurant_name: currentRestaurant.name,
+                restaurant_location: currentRestaurant.location,
+                "dishes": cartDishes
+            })
+        })
+            .then((res) => res.json())
+            .then((v) => console.log(v))
+            .catch((err) => console.log(err))
+    }
 
     const [visibleDishDesc, setVisibleDishDesc] = useState(false);
     const [currentDish, setCurrentDish] = useState({})
@@ -85,7 +102,7 @@ export default function Menu(){
                         }
                     </ul>
                 </div>
-                <Cart dishes={cartDishes}/>
+                <Cart dishes={cartDishes} sendOrder={sendOrder}/>
             </div>
             <Modal visible={visibleDishDesc} setVisible={setVisibleDishDesc}>
                 <div className="dish-description" onClick={(e) => {e.stopPropagation()}}>

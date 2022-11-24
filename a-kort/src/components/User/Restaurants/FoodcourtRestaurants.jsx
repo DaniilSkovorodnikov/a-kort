@@ -1,6 +1,6 @@
 import UserRestaurant from "./UserRestaurant";
 import UserHeader from "../UserHeader";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 async function getRestaurants(foodcourtName) {
     const data = await fetch(`http://127.0.0.1:8000/get_foodcourt_restaurants/?name=${foodcourtName}`);
@@ -9,8 +9,13 @@ async function getRestaurants(foodcourtName) {
 }
 
 export default function FoodcourtRestaurants(){
-    const [foodcourt, setFoodcourt] = useState("");
-    const [restaurants, setRestaurants] = useState([])
+    const [foodcourt, setFoodcourt] = useState(sessionStorage.getItem("currentFoodcourt"));
+    const [restaurants, setRestaurants] = useState([]);
+
+    useEffect(() => {
+        getRestaurants(foodcourt)
+            .then((v) => setRestaurants([...v]));
+    }, [foodcourt])
 
     return(<div>
         <UserHeader>
@@ -18,10 +23,9 @@ export default function FoodcourtRestaurants(){
                 className="restaurant-adder__location"
                 onChange={(e) => {
                     setFoodcourt(e.target.value);
-                    getRestaurants(e.target.value)
-                        .then((v) => setRestaurants([...v]));
+                    sessionStorage.setItem("currentFoodcourt", e.target.value);
                 }}
-                defaultValue=""
+                defaultValue={foodcourt}
             >
                 <option hidden value="">Адрес</option>
                 <option>Гринвич</option>
