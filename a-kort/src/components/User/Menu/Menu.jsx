@@ -63,9 +63,7 @@ export default function Menu(){
             },
             method: "POST",
             body: JSON.stringify({
-                restaurant_name: currentRestaurant.name,
-                restaurant_location: currentRestaurant.location,
-                "dishes": cartDishes
+                allCartDishes
             })
         })
             .catch((err) => console.log(err))
