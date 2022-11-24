@@ -14,7 +14,7 @@ export default function Menu(){
     useEffect(() => {
         const setData = (categories, dishes) =>{
             setCategories(categories);
-            setDishesInCategory([dishes])
+            setDishesInCategory(dishes);
         }
         getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
     }, [])

@@ -65,6 +65,17 @@
     font-weight: 900;
   }
 
+  &__description{
+    display: none;
+    font-size: 11px;
+    line-height: 14px;
+    color: #717171;
+
+    &.visible{
+      display: inline;
+    }
+  }
+
   &__btn{
     display: none;
     width: 90px;

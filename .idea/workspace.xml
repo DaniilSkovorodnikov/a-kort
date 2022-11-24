@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add user menu, modal dishes and cart">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Delete mok's">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,21 +107,7 @@
       <workItem from="1669030263738" duration="7588000" />
       <workItem from="1669204090832" duration="86000" />
       <workItem from="1669220403999" duration="10135000" />
-      <workItem from="1669269341545" duration="438000" />
-    </task>
-    <task id="LOCAL-00024" summary="Fix fetch">
-      <created>1667821201052</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1667821201052</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Fix fetch">
-      <created>1667824459324</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1667824459324</updated>
+      <workItem from="1669269341545" duration="1406000" />
     </task>
     <task id="LOCAL-00026" summary="Add get iamge">
       <created>1667825279507</created>
@@ -450,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669234827543</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Delete mok's">
+      <created>1669269804961</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1669269804961</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Delete mok's">
+      <created>1669269900409</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1669269900409</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add get iamge" />
     <MESSAGE value="Fix get iamge" />
     <MESSAGE value="Add delete dish" />
     <MESSAGE value="Fix warning" />
@@ -493,6 +494,7 @@
     <MESSAGE value="Add img on restaurants" />
     <MESSAGE value="Fix restaurant styles" />
     <MESSAGE value="Add user menu, modal dishes and cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add user menu, modal dishes and cart" />
+    <MESSAGE value="Delete mok's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete mok's" />
   </component>
 </project>

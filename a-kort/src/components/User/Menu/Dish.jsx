@@ -2,9 +2,15 @@ import {useState} from "react";
 
 export default function Dish({name, price, photo, description, setVisibleDishDesc, setCurrentDish ,addInCart}){
     const [visibleBtn, setVisibleBtn] = useState(false);
-    const btnClasses = ["user-dish__btn"]
+    const btnClasses = ["user-dish__btn"];
     if (visibleBtn){
         btnClasses.push("visible");
+    }
+
+    const [visibleDescription, setVisibleDescription] = useState(false);
+    const descriptionClasses = ["user-dish__description"];
+    if (visibleDescription){
+        descriptionClasses.push("visible")
     }
 
     return (
@@ -19,6 +25,7 @@ export default function Dish({name, price, photo, description, setVisibleDishDes
             <img src={photo} className="user-dish__photo" alt=""></img>
             <h2 className="user-dish__name">{name}</h2>
             <p className="user-dish__price">{price} <span>&#8381;</span></p>
+            <p className={descriptionClasses.join(' ')}>{description}</p>
             <button
                 className={btnClasses.join(' ')}
                 onClick={(e) => {
