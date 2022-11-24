@@ -19,35 +19,8 @@ export default function Menu(){
         getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
     }, [])
 
-    const [dishesInCategory, setDishesInCategory] = useState([
-        [
-            {
-                dish_name: "Чизбургер",
-                dish_price: 59,
-                dish_description: "Очень сырный, стоит дешево"
-            },
-            {
-                dish_name: "Воппер",
-                dish_price: 99,
-                dish_description: "Побольше чем чизбургер, но, чтобы наестся нужно два"
-            }
-        ],
-        [
-            {
-                dish_name: "Филадельфия",
-                dish_price: 219,
-                dish_description: "Самые быстро-съедаемые роллы во всех наборах"
-            }
-        ],
-        [
-            {
-                dish_name: "Борщ",
-                dish_price: 129,
-                dish_description: "Наваристый, вкусный, почти как дома"
-            }
-        ]
-    ])
-    const [categories, setCategories] = useState(["Бургеры", "Роллы", "Супы"])
+    const [dishesInCategory, setDishesInCategory] = useState([])
+    const [categories, setCategories] = useState([])
     const [currentCategory, setCurrentCategory] = useState(-1)
 
     const [cartDishes, setCartDishes] = useState([]);
