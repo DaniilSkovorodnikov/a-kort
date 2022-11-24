@@ -19,7 +19,14 @@ export default function Menu(){
         getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
     }, [])
 
-    const [dishesInCategory, setDishesInCategory] = useState([])
+    const [dishesInCategory, setDishesInCategory] = useState([
+        [{
+            dish_name: "Чизбургер",
+            dish_price: 59,
+            dish_description: "Стоит хуйня, маленький, зато вкусный, стоит брать не меньше двух",
+            dish_image: ""
+        }]
+    ])
     const [categories, setCategories] = useState([])
     const [currentCategory, setCurrentCategory] = useState(-1)
 

@@ -60,19 +60,32 @@
   }
 
   &__price{
-    align-self: flex-start;
-    margin: 15px 0 0 20px;
+    position: absolute;
+    bottom: 22px;
+    left: 23px;
     font-weight: 900;
   }
 
   &__description{
-    display: none;
+    width: 80%;
+    margin: 5px 10px 10px 5px;
     font-size: 11px;
     line-height: 14px;
     color: #717171;
+  }
+
+  &__hidden{
+    display: none;
+    width: 100%;
+    height: 154px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
 
     &.visible{
-      display: inline;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 

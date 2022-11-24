@@ -8,7 +8,7 @@ export default function Dish({name, price, photo, description, setVisibleDishDes
     }
 
     const [visibleDescription, setVisibleDescription] = useState(false);
-    const descriptionClasses = ["user-dish__description"];
+    const descriptionClasses = ["user-dish__hidden"];
     if (visibleDescription){
         descriptionClasses.push("visible")
     }
@@ -30,7 +30,6 @@ export default function Dish({name, price, photo, description, setVisibleDishDes
         >
             <img src={photo} className="user-dish__photo" alt=""></img>
             <h2 className="user-dish__name">{name}</h2>
-            <p className={descriptionClasses.join(' ')}>{description}</p>
             <p className="user-dish__price">{price} <span>&#8381;</span></p>
             <button
                 className={btnClasses.join(' ')}
@@ -39,6 +38,18 @@ export default function Dish({name, price, photo, description, setVisibleDishDes
                     addInCart({name, price});
                 }}
             >В корзину</button>
+            <div className={descriptionClasses.join(' ')}>
+                <h2 className="user-dish__name">{name}</h2>
+                <p className="user-dish__description">{description}</p>
+                <p className="user-dish__price">{price} <span>&#8381;</span></p>
+                <button
+                    className={btnClasses.join(' ')}
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        addInCart({name, price});
+                    }}
+                >В корзину</button>
+            </div>
         </li>
     )
 }

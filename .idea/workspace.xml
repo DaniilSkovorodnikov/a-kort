@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Delete mok's">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add dish description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
@@ -107,28 +107,7 @@
       <workItem from="1669030263738" duration="7588000" />
       <workItem from="1669204090832" duration="86000" />
       <workItem from="1669220403999" duration="10135000" />
-      <workItem from="1669269341545" duration="1406000" />
-    </task>
-    <task id="LOCAL-00026" summary="Add get iamge">
-      <created>1667825279507</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1667825279507</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Fix get iamge">
-      <created>1667825369814</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1667825369814</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Fix get iamge">
-      <created>1667825675333</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1667825675333</updated>
+      <workItem from="1669269341545" duration="2197000" />
     </task>
     <task id="LOCAL-00029" summary="Fix get iamge">
       <created>1667826334877</created>
@@ -452,7 +431,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669269900409</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Add dish description">
+      <created>1669270779186</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1669270779186</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Add dish description">
+      <created>1669270862962</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1669270862962</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Add dish description">
+      <created>1669270926876</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1669270926876</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix get iamge" />
     <MESSAGE value="Add delete dish" />
     <MESSAGE value="Fix warning" />
     <MESSAGE value="Add delete fetch" />
@@ -495,6 +494,7 @@
     <MESSAGE value="Fix restaurant styles" />
     <MESSAGE value="Add user menu, modal dishes and cart" />
     <MESSAGE value="Delete mok's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete mok's" />
+    <MESSAGE value="Add dish description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dish description" />
   </component>
 </project>
