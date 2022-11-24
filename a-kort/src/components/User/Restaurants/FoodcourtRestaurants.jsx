@@ -36,7 +36,6 @@ export default function FoodcourtRestaurants(){
                                                     location={v.location}
                                                     photo={`http://127.0.0.1:8000/get_image/?image=${v.img}`}
             />)}
-            <UserRestaurant name={"БК"} rating={4.5} photo={""} location={"Парк Хаус"}/>
         </ul>
     </div>);
 }
