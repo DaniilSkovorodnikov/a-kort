@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import Order from "./Order";
 
 async function getOrders(restaurantName, restaurantLocation){
-    const data = fetch(`http://127.0.0.1:8000/get_orders_by_restaurant/?name=${restaurantName}&location=${restaurantLocation}`);
+    const data = await fetch(`http://127.0.0.1:8000/get_orders_by_restaurant/?name=${restaurantName}&location=${restaurantLocation}`);
     const res = await data.json();
     return res["orders"];
 }
