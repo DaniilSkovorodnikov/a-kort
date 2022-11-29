@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix styles">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add orders for admin">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/Cart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartDish.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartRestaurants.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Cart.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/UserRestaurant.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/UserRestaurant.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Basket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,11 +61,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\User\Cart" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\img" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\User\Restaurants" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles\User" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles\Admin" />
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\Admin" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -107,14 +116,7 @@
       <workItem from="1669220403999" duration="10135000" />
       <workItem from="1669269341545" duration="15231000" />
       <workItem from="1669437918222" duration="410000" />
-      <workItem from="1669708777485" duration="1277000" />
-    </task>
-    <task id="LOCAL-00039" summary="Fix styles">
-      <created>1668071808816</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1668071808816</updated>
+      <workItem from="1669708777485" duration="10668000" />
     </task>
     <task id="LOCAL-00040" summary="Fix styles">
       <created>1668071836831</created>
@@ -452,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669285030822</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Add orders for admin">
+      <created>1669710320634</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1669710320634</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add user menu" />
     <MESSAGE value="Add get dishes in user menu" />
     <MESSAGE value="Fix user menu" />
     <MESSAGE value="Fix add dishes in user menu" />
@@ -495,6 +503,7 @@
     <MESSAGE value="Add getting order" />
     <MESSAGE value="Fix fetch" />
     <MESSAGE value="Fix styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix styles" />
+    <MESSAGE value="Add orders for admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add orders for admin" />
   </component>
 </project>

@@ -35,10 +35,11 @@ export default function FoodcourtRestaurants(){
         </UserHeader>
 
         <ul className="restaurants">
-            {restaurants.map((v) => <UserRestaurant name={v.name}
+            {restaurants.map((v, i) => <UserRestaurant name={v.name}
                                                     rating={v.rating}
                                                     location={v.location}
                                                     photo={`http://127.0.0.1:8000/get_image/?image=${v.img}`}
+                                                    key={i}
             />)}
         </ul>
     </div>);

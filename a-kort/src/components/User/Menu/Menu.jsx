@@ -2,14 +2,13 @@ import UserHeader from "../UserHeader";
 import "../../../styles/User/Menu/Menu.scss"
 import Dish from "./Dish";
 import {getDishes} from "../../Admin/MenuChanger/MenuChanger";
-import {useContext, useEffect, useState} from "react";
-import {UserContext} from "../UserPanel";
+import {useEffect, useState} from "react";
 import CategoryButton from "./CategoryButton";
-import Cart from "./Cart";
+import Cart from "../Cart/Cart";
 import Modal from "../../Admin/AdminMenu/Modal";
 
 export default function Menu(){
-    const {currentRestaurant} = useContext(UserContext)
+    const [currentRestaurant] = useState(JSON.parse(sessionStorage.getItem('currentRestaurant')))
 
     useEffect(() => {
         const setData = (categories, dishes) =>{
@@ -23,42 +22,46 @@ export default function Menu(){
     const [categories, setCategories] = useState([])
     const [currentCategory, setCurrentCategory] = useState(-1)
 
-    const [cartDishes, setCartDishes] = useState([]);
-    const [allCartDishes, setAllCartDishes] = useState(JSON.parse(sessionStorage.getItem('cart')) ?? [])
+    const [cartDishesStack, setCartDishesStack] = useState([])
     function addInCart(dish){
-        setCartDishes([...cartDishes, dish]);
+        //Перерисует компонент
+        setCartDishesStack([...cartDishesStack,dish])
+        addDishInCart(dish)
     }
 
-    function clearCart(){
-        sessionStorage.setItem('cart', JSON.stringify([]))
-        setAllCartDishes([])
-    }
-
-    useEffect(() => {
-        const cart = JSON.parse(sessionStorage.getItem('cart')) ?? [];
-        const dish = cartDishes[cartDishes.length - 1];
-        if(dish){
-            let counter = 0;
-            let cartContainsDish = false;
-            for (const el of cart) {
-                if (dish.name === el.dish.name && currentRestaurant.name === el.restaurantName) {
-                    cart[counter].count++;
+    function addDishInCart(dish) {
+        const cart = JSON.parse(sessionStorage.getItem('cart')) ?? {};
+        let counter = 0;
+        let cartContainsDish = false;
+        const currentRest = `${currentRestaurant.name}, ${currentRestaurant.location}`
+        if (cart[currentRest]){
+            for (const el of cart[currentRest]) {
+                if (dish.name === el.dish.name && currentRestaurant.name === el.restaurantName &&
+                    currentRestaurant.location === el.restaurantLocation) {
+                    cart[currentRest][counter].count++;
                     cartContainsDish = true;
                 }
                 counter++;
             }
-            if (!cartContainsDish) {
-                cart.push({
-                    dish,
-                    count: 1,
-                    restaurantName: currentRestaurant.name,
-                    restaurantLocation: currentRestaurant.location
-                })
-            }
-            sessionStorage.setItem('cart', JSON.stringify(cart))
-            setAllCartDishes(cart);
         }
-    }, [cartDishes])
+        else {
+            cart[currentRest] = [];
+        }
+        if (!cartContainsDish) {
+            cart[currentRest].push({
+                dish,
+                count: 1,
+                restaurantName: currentRestaurant.name,
+                restaurantLocation: currentRestaurant.location
+            })
+        }
+        sessionStorage.setItem('cart', JSON.stringify(cart))
+    }
+
+    function clearCart(){
+        setCartDishesStack([])
+        sessionStorage.setItem('cart', JSON.stringify({}))
+    }
 
     function sendOrder(){
         fetch("http://127.0.0.1:8000/create_order/", {
@@ -67,9 +70,7 @@ export default function Menu(){
                 Accept: "application/json",
             },
             method: "POST",
-            body: JSON.stringify({
-                allCartDishes
-            })
+            body: sessionStorage.getItem('cart')
         })
             .catch((err) => console.log(err))
     }
@@ -103,7 +104,7 @@ export default function Menu(){
                     <ul className="dishes">
                         {
                             currentCategory === -1 ?
-                                dishesInCategory.map((v) => v.map((dish) => <Dish
+                                dishesInCategory.map((v) => v.map((dish, i) => <Dish
                                                                                   name={dish.dish_name}
                                                                                   price={dish.dish_price}
                                                                                   photo={dish.dish_image}
@@ -111,8 +112,9 @@ export default function Menu(){
                                                                                   setCurrentDish={setCurrentDish}
                                                                                   setVisibleDishDesc={setVisibleDishDesc}
                                                                                   addInCart={addInCart}
+                                                                                  key={i}
                                 />)):
-                                dishesInCategory[currentCategory].map((dish) => <Dish
+                                dishesInCategory[currentCategory].map((dish, i) => <Dish
                                                                                    name={dish.dish_name}
                                                                                    price={dish.dish_price}
                                                                                    photo={dish.dish_image}
@@ -120,11 +122,15 @@ export default function Menu(){
                                                                                    setCurrentDish={setCurrentDish}
                                                                                    setVisibleDishDesc={setVisibleDishDesc}
                                                                                    addInCart={addInCart}
+                                                                                   key={i}
                                 />)
                         }
                     </ul>
                 </div>
-                <Cart cartDishes={allCartDishes} sendOrder={sendOrder} clear={clearCart}/>
+                <Cart cartDishes={JSON.parse(sessionStorage.getItem('cart')) ?? {}}
+                      sendOrder={sendOrder}
+                      clear={clearCart}
+                />
             </div>
             <Modal visible={visibleDishDesc} setVisible={setVisibleDishDesc}>
                 <div className="dish-description" onClick={(e) => {e.stopPropagation()}}>

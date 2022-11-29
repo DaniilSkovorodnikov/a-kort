@@ -8,11 +8,18 @@
     font-size: 30px;
   }
 
-  &__dishes{
-    margin: 40px 30px 40px 45px;
+  &__restaurants{
+    margin: 20px 30px 30px 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+  }
+
+  &__dishes{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   &__header{
@@ -39,4 +46,29 @@
     color: white;
     border-radius: 25px;
   }
+}
+
+.cart-dish{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+
+  &__right{
+    display: flex;
+  }
+
+  &__count-changer{
+    width: 75px;
+    display: flex;
+    margin-right: 10px;
+    border: 1px solid #717171;
+    border-radius: 5px;
+  }
+
+  &__increment,&__decrement,&__count{
+    width: 33%;
+    text-align: center;
+  }
+
+
 }
