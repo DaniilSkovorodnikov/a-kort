@@ -7,9 +7,9 @@ export default function Order({id, dishes}){
             </div>
             <ul className="order__dishes">
                 {dishes.map((v,i) =>
-                    <li className="order__dish">
+                    <li className="order__dish" key={i}>
                         <h4 className="order__dish-name">{v.name}</h4>
-                        <p className="count">{v.count}</p>
+                        <p className="count">{v.quantity}</p>
                     </li>
                 )}
             </ul>

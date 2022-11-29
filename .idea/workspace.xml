@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix fetch">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix styles">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,14 +105,9 @@
       <workItem from="1669030263738" duration="7588000" />
       <workItem from="1669204090832" duration="86000" />
       <workItem from="1669220403999" duration="10135000" />
-      <workItem from="1669269341545" duration="14501000" />
-    </task>
-    <task id="LOCAL-00038" summary="Fix user menu">
-      <created>1668071740604</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1668071740604</updated>
+      <workItem from="1669269341545" duration="15231000" />
+      <workItem from="1669437918222" duration="410000" />
+      <workItem from="1669708777485" duration="1277000" />
     </task>
     <task id="LOCAL-00039" summary="Fix styles">
       <created>1668071808816</created>
@@ -449,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669283718357</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Fix styles">
+      <created>1669285030822</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1669285030822</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +473,6 @@
     <MESSAGE value="Add user menu" />
     <MESSAGE value="Add get dishes in user menu" />
     <MESSAGE value="Fix user menu" />
-    <MESSAGE value="Fix styles" />
     <MESSAGE value="Fix add dishes in user menu" />
     <MESSAGE value="Add routing" />
     <MESSAGE value="Add a restaurant menu for admin" />
@@ -492,6 +494,7 @@
     <MESSAGE value="Add sending order" />
     <MESSAGE value="Add getting order" />
     <MESSAGE value="Fix fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix fetch" />
+    <MESSAGE value="Fix styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix styles" />
   </component>
 </project>
