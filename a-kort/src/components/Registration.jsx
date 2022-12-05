@@ -7,7 +7,7 @@ export default function Registration(){
     const [login, setLogin] = useState("")
     const [password, setPassword] = useState("")
     const [visible, setVisible] = useState(false);
-    const classes = ["registration__error"]
+    const [classes, setClasses] = useState(["registration__error"])
 
     async function registration(){
         const res = await fetch("http://127.0.0.1:8000/register_user/", {
@@ -18,12 +18,12 @@ export default function Registration(){
             method: "POST",
             body: JSON.stringify({login, password})
         })
-        const isSuccess = await res.json();
+        const isSuccess = res.json();
         if(isSuccess){
             redirect("user")
         }
-        else if(visible){
-            classes.push("visible")
+        else{
+            setClasses([...classes, "visible"])
         }
     }
 
