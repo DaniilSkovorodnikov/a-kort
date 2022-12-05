@@ -40,7 +40,6 @@ export default function Registration(){
             <button className="registration__submit" onClick={() => {
                 registration()
                     .then(() => {
-                        setLogin("")
                         setPassword("")
                     })
             }}>Зарегистрироваться</button>

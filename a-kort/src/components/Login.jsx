@@ -12,7 +12,7 @@ export default function Login(){
     const [classes, setClasses] = useState(["login__error"]);
 
     async function doLogin(){
-        const res = await fetch("", {
+        const res = await fetch("http://127.0.0.1:8000/auth_user/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
@@ -42,7 +42,6 @@ export default function Login(){
             <button className="login__submit" onClick={() => {
                 doLogin()
                     .then(() => {
-                        setLogin("");
                         setPassword("");
                     });
             }}>Войти</button>
