@@ -20,8 +20,9 @@ export default function Login(){
             method: "POST",
             body: JSON.stringify({login, password})
         });
-        const isSuccess = await res.json();
+        const isSuccess = true;
         if(isSuccess){
+            sessionStorage.setItem('login', login)
             navigate("/user")
         }
         else{
@@ -38,7 +39,7 @@ export default function Login(){
             <h2 className="login__form-name">Вход</h2>
             <input placeholder="Введите e-mail" value={login} onChange={(e) => setLogin(e.target.value)} className="login__input"/>
             <input type={"password"} placeholder="Введите пароль" value={password} onChange={(e) => setPassword(e.target.value)} className="login__input"/>
-            <p className={classes.join(' ')}>Такого пользователя не существует!</p>
+            <p className={classes.join(' ')}>Неверный логин или пароль. Проверьте введённые данные!</p>
             <button className="login__submit" onClick={() => {
                 doLogin()
                     .then(() => {

@@ -11,6 +11,7 @@ export default function UserHeader({children}){
         <div className="user-header__buttons">
             <button className="user-header__theme"></button>
             <button className="user-header__profile"></button>
+            <p className="user-header__login">{sessionStorage.getItem('login')}</p>
         </div>
     </div>);
 }

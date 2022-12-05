@@ -20,6 +20,7 @@ export default function Registration(){
         })
         const isSuccess = res.json();
         if(isSuccess){
+            sessionStorage.setItem('login', login)
             navigate("/user")
         }
         else{
