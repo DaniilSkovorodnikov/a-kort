@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add orders for admin">
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/Cart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartDish.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartRestaurants.jsx" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add new cart">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/Registration.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/img/big-smartphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/img/hero-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/styles/Login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Cart.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartDish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartDish.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/UserRestaurant.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/UserRestaurant.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Basket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Cart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Cart.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -61,8 +62,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\User\Cart" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\img" />
+      <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\User\Cart" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\components\User\Restaurants" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles\User" />
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\styles\Admin" />
@@ -116,14 +117,13 @@
       <workItem from="1669220403999" duration="10135000" />
       <workItem from="1669269341545" duration="15231000" />
       <workItem from="1669437918222" duration="410000" />
-      <workItem from="1669708777485" duration="10668000" />
-    </task>
-    <task id="LOCAL-00040" summary="Fix styles">
-      <created>1668071836831</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1668071836831</updated>
+      <workItem from="1669708777485" duration="12795000" />
+      <workItem from="1669830942880" duration="328000" />
+      <workItem from="1669886746229" duration="4396000" />
+      <workItem from="1669991486503" duration="3000" />
+      <workItem from="1670079363212" duration="1233000" />
+      <workItem from="1670179097679" duration="10000" />
+      <workItem from="1670242971787" duration="10885000" />
     </task>
     <task id="LOCAL-00041" summary="Fix styles">
       <created>1668071869191</created>
@@ -461,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669710320634</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Add new cart">
+      <created>1669719711765</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1669719711765</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add get dishes in user menu" />
     <MESSAGE value="Fix user menu" />
     <MESSAGE value="Fix add dishes in user menu" />
     <MESSAGE value="Add routing" />
@@ -504,6 +510,7 @@
     <MESSAGE value="Fix fetch" />
     <MESSAGE value="Fix styles" />
     <MESSAGE value="Add orders for admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add orders for admin" />
+    <MESSAGE value="Add new cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new cart" />
   </component>
 </project>
