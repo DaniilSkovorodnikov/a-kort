@@ -20,7 +20,7 @@ export default function Login(){
             method: "POST",
             body: JSON.stringify({login, password})
         });
-        const isSuccess = true;
+        const isSuccess = await res.json();
         if(isSuccess){
             sessionStorage.setItem('login', login)
             navigate("/user")
