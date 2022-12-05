@@ -1,13 +1,13 @@
 import {useState} from "react";
-import {Link, redirect} from "react-router-dom";
+import {Link, redirect, useNavigate} from "react-router-dom";
 import logo from "../img/user-logo.svg";
-
 
 export default function Registration(){
     const [login, setLogin] = useState("")
     const [password, setPassword] = useState("")
     const [visible, setVisible] = useState(false);
     const [classes, setClasses] = useState(["registration__error"])
+    const navigate = useNavigate()
 
     async function registration(){
         const res = await fetch("http://127.0.0.1:8000/register_user/", {
@@ -18,9 +18,9 @@ export default function Registration(){
             method: "POST",
             body: JSON.stringify({login, password})
         })
-        const isSuccess = res.json();
+        const isSuccess = true;
         if(isSuccess){
-            redirect("user")
+            navigate("/user")
         }
         else{
             setClasses([...classes, "visible"])
