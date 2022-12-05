@@ -1,24 +1,33 @@
 import logo from "../img/user-logo.svg"
 import smartphone from "../img/big-smartphone.png"
 import "../styles/Login.scss"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useState} from "react";
 
 
-async function login(login, password){
-    fetch("", {
-        headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify({login, password})
-    })
-}
-
 export default function Login(){
-    const [login, setLogin] = useState("")
-    const [password, setPassword] = useState("")
+    const [login, setLogin] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+    const [classes, setClasses] = useState(["login__error"]);
+
+    async function doLogin(){
+        const res = await fetch("", {
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            method: "POST",
+            body: JSON.stringify({login, password})
+        });
+        const isSuccess = await res.json();
+        if(isSuccess){
+            navigate("/user")
+        }
+        else{
+            setClasses([...classes, "visible"])
+        }
+    }
 
     return (<div className="login">
         <div className="login__header">
@@ -29,7 +38,14 @@ export default function Login(){
             <h2 className="login__form-name">Вход</h2>
             <input placeholder="Введите e-mail" value={login} onChange={(e) => setLogin(e.target.value)} className="login__input"/>
             <input type={"password"} placeholder="Введите пароль" value={password} onChange={(e) => setPassword(e.target.value)} className="login__input"/>
-            <Link to="user" className="login__submit">Войти</Link>
+            <p className={classes.join(' ')}>Такого пользователя не существует!</p>
+            <button className="login__submit" onClick={() => {
+                doLogin()
+                    .then(() => {
+                        setLogin("");
+                        setPassword("");
+                    });
+            }}>Войти</button>
             <Link to="/registration" className="login__registration">Ещё нет аккаунта? Зарегистрируйтесь.</Link>
         </div>
         <section className="login__hero">

@@ -6,8 +6,8 @@ export default function Registration(){
     const [login, setLogin] = useState("")
     const [password, setPassword] = useState("")
     const [visible, setVisible] = useState(false);
-    const [classes, setClasses] = useState(["registration__error"])
-    const navigate = useNavigate()
+    const [classes, setClasses] = useState(["registration__error"]);
+    const navigate = useNavigate();
 
     async function registration(){
         const res = await fetch("http://127.0.0.1:8000/register_user/", {
@@ -18,7 +18,7 @@ export default function Registration(){
             method: "POST",
             body: JSON.stringify({login, password})
         })
-        const isSuccess = await res.json();
+        const isSuccess = false;
         if(isSuccess){
             navigate("/user")
         }
@@ -37,7 +37,13 @@ export default function Registration(){
             <input placeholder="Введите e-mail" value={login} onChange={(e) => setLogin(e.target.value)} className="login__input"/>
             <p className={classes.join(' ')}>Данный пользователь уже существует!</p>
             <input type={"password"} placeholder="Введите пароль" value={password} onChange={(e) => setPassword(e.target.value)} className="login__input"/>
-            <button className="registration__submit" onClick={registration}>Зарегистрироваться</button>
+            <button className="registration__submit" onClick={() => {
+                registration()
+                    .then(() => {
+                        setLogin("")
+                        setPassword("")
+                    })
+            }}>Зарегистрироваться</button>
         </div>
     </div>)
 }
