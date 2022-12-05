@@ -18,7 +18,7 @@ export default function Registration(){
             method: "POST",
             body: JSON.stringify({login, password})
         })
-        const isSuccess = false;
+        const isSuccess = res.json();
         if(isSuccess){
             navigate("/user")
         }

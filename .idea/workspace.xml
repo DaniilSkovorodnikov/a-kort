@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix registration">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Login.jsx" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix login">
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Registration.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,14 +112,7 @@
       <workItem from="1669991486503" duration="3000" />
       <workItem from="1670079363212" duration="1233000" />
       <workItem from="1670179097679" duration="10000" />
-      <workItem from="1670242971787" duration="13351000" />
-    </task>
-    <task id="LOCAL-00045" summary="Fix add dishes in user menu">
-      <created>1668072742963</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1668072742963</updated>
+      <workItem from="1670242971787" duration="13615000" />
     </task>
     <task id="LOCAL-00046" summary="Fix add dishes in user menu">
       <created>1668073704296</created>
@@ -459,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670256322375</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Fix login">
+      <created>1670257086829</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1670257086829</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add routing" />
     <MESSAGE value="Add a restaurant menu for admin" />
     <MESSAGE value="Fix restaurant menu" />
     <MESSAGE value="Fix immediately invoked renders" />
@@ -502,6 +499,7 @@
     <MESSAGE value="Add new cart" />
     <MESSAGE value="Add a login and registration" />
     <MESSAGE value="Fix registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix registration" />
+    <MESSAGE value="Fix login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix login" />
   </component>
 </project>
