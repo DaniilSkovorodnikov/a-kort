@@ -170,3 +170,57 @@
     color: white;
   }
 }
+
+.success{
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text{
+    font-size: 32px;
+  }
+
+  &__exit{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #d62727;
+    color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+}
+
+.cart-error{
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+  &__title{
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  &__message{
+    font-size: 26px;
+    margin: auto;
+  }
+
+  &__exit{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #d62727;
+    color: white;
+    margin-bottom: 20px;
+  }
+}

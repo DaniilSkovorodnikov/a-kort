@@ -1,6 +1,4 @@
 import {Link} from "react-router-dom";
-import {useContext} from "react";
-import {UserContext} from "../UserPanel";
 
 export default function UserRestaurant({name, photo, rating, location}){
 

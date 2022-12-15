@@ -71,23 +71,34 @@ export default function Menu(){
     }
 
     function sendOrder(){
-        fetch("http://127.0.0.1:8000/create_order/", {
+        const order = JSON.parse(sessionStorage.getItem('cart'));
+        order.login = sessionStorage.getItem('login')
+        console.log(order);
+        fetch("http://26.87.4.182:8000/create_order/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
             },
             method: "POST",
-            body: sessionStorage.getItem('cart')
+            body: JSON.stringify(order)
         })
             .catch((err) => console.log(err))
+        clearCart()
+        setVisible(true)
     }
 
     const [visibleDishDesc, setVisibleDishDesc] = useState(false);
     const [currentDish, setCurrentDish] = useState({})
 
+    const [visible, setVisible] = useState(false)
     return (
-
             <div>
+                <Modal visible={visible} setVisible={setVisible}>
+                    <div className="success" onClick={(e) => e.stopPropagation()}>
+                        <p className="success__text">Заказ оформлен</p>
+                        <button className="success__exit" onClick={() => setVisible(false)}>Закрыть</button>
+                    </div>
+                </Modal>
                 <UserHeader>
                     <p className="user-header__location">{`${currentRestaurant.name}, ${currentRestaurant.location}`}</p>
                 </UserHeader>

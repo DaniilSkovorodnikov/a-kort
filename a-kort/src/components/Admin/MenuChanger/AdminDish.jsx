@@ -16,9 +16,9 @@ export default function AdminDish({name, price, photo, description, categoryDish
 
 
     const fileReader = new FileReader();
-        fileReader.onloadend = () => {
-            setImg(fileReader.result)
-        }
+    fileReader.onloadend = () => {
+        setImg(fileReader.result)
+    }
 
     function updateDish(){
         const dish = {

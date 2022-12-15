@@ -44,3 +44,62 @@
     }
   }
 }
+
+.map{
+  width: 800px;
+  height: 450px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__foodcourts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+  }
+
+  &__changer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__change{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #989898;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  &__apply{
+    width: 150px;
+    height: 30px;
+    align-self: center;
+    background-color: #d62727;
+    color: white;
+    border-radius: 10px;
+  }
+}
+
+.nearest-foodcourt{
+  width: 400px;
+  height: 300px;
+  border: 1px solid gray;
+}

@@ -12,7 +12,7 @@ export default function Login(){
     const [classes, setClasses] = useState(["login__error"]);
 
     async function doLogin(){
-        const res = await fetch("http://127.0.0.1:8000/auth_user/", {
+        const res = await fetch("http://26.87.4.182:8000/auth_user/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
@@ -48,6 +48,12 @@ export default function Login(){
             }}>Войти</button>
             <Link to="/registration" className="login__registration">Ещё нет аккаунта? Зарегистрируйтесь.</Link>
         </div>
+        <button className="login__submit-other" onClick={() => {
+            sessionStorage.setItem('login', "")
+            navigate("/user")
+        }}>
+            Войти без регистрации
+        </button>
         <section className="login__hero">
             <img src={smartphone} alt="" className="login__smartphone"/>
             <div className="login__hero-right">

@@ -4,10 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix login">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add login in user panel">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Profile/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/AdminDish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/AdminDish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/AdminRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/AdminRestaurants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-kort/src/components/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/UserRestaurant.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/UserRestaurant.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -114,21 +133,15 @@
       <workItem from="1669991486503" duration="3000" />
       <workItem from="1670079363212" duration="1233000" />
       <workItem from="1670179097679" duration="10000" />
-      <workItem from="1670242971787" duration="14034000" />
-    </task>
-    <task id="LOCAL-00048" summary="Add routing">
-      <created>1668074306482</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1668074306482</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Add a restaurant menu for admin">
-      <created>1668519945110</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1668519945110</updated>
+      <workItem from="1670242971787" duration="14786000" />
+      <workItem from="1670314031319" duration="559000" />
+      <workItem from="1670332518860" duration="6000" />
+      <workItem from="1670417415133" duration="1031000" />
+      <workItem from="1670918631910" duration="2844000" />
+      <workItem from="1670924330838" duration="9737000" />
+      <workItem from="1671035981137" duration="18000" />
+      <workItem from="1671043149763" duration="19000" />
+      <workItem from="1671090960317" duration="6385000" />
     </task>
     <task id="LOCAL-00050" summary="Fix restaurant menu">
       <created>1668520192718</created>
@@ -459,7 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670257255606</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Add login in user panel">
+      <created>1670257695855</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1670257695855</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Add login in user panel">
+      <created>1670257717099</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1670257717099</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add a restaurant menu for admin" />
     <MESSAGE value="Fix restaurant menu" />
     <MESSAGE value="Fix immediately invoked renders" />
     <MESSAGE value="Add getting all restaurants fetch" />
@@ -502,6 +528,7 @@
     <MESSAGE value="Add a login and registration" />
     <MESSAGE value="Fix registration" />
     <MESSAGE value="Fix login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix login" />
+    <MESSAGE value="Add login in user panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login in user panel" />
   </component>
 </project>

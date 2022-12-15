@@ -32,7 +32,7 @@ export default function Category({name, id, dishes, restaurantName, restaurantLo
             restaurant_name: restaurantName,
             restaurant_location: restaurantLocation
         }
-        fetch("http://127.0.0.1:8000/add_dish/", {
+        fetch("http://26.87.4.182:8000/add_dish/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
