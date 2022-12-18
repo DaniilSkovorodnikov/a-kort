@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add maps">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" afterDir="false" />
-    </list>
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add maps" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,6 +119,7 @@
       <workItem from="1671035981137" duration="18000" />
       <workItem from="1671043149763" duration="19000" />
       <workItem from="1671090960317" duration="8068000" />
+      <workItem from="1671303017159" duration="10000" />
     </task>
     <task id="LOCAL-00051" summary="Fix restaurant menu">
       <created>1668520249140</created>

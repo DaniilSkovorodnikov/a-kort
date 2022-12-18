@@ -60,7 +60,7 @@ export default function FoodcourtRestaurants(){
             {restaurants.map((v, i) => <UserRestaurant name={v.name}
                                                     rating={v.rating}
                                                     location={v.location}
-                                                    photo={`http://127.0.0.1:8000/get_image/?image=${v.img}`}
+                                                    photo={`http://26.87.4.182:8000/get_image/?image=${v.img}`}
                                                     key={i}
             />)}
         </ul>
