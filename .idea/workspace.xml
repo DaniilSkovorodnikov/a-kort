@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add maps" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix fetching images">
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/Order.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/OrderHistory.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/components/User/ProfileBurger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-kort/src/styles/User/OrdersHistory.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/UserHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/UserHeader.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -120,13 +131,9 @@
       <workItem from="1671043149763" duration="19000" />
       <workItem from="1671090960317" duration="8068000" />
       <workItem from="1671303017159" duration="10000" />
-    </task>
-    <task id="LOCAL-00051" summary="Fix restaurant menu">
-      <created>1668520249140</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1668520249140</updated>
+      <workItem from="1671365325804" duration="711000" />
+      <workItem from="1671447711294" duration="66000" />
+      <workItem from="1671695701184" duration="5312000" />
     </task>
     <task id="LOCAL-00052" summary="Fix immediately invoked renders">
       <created>1668520696469</created>
@@ -464,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671097613830</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Fix fetching images">
+      <created>1671365573682</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1671365573683</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix immediately invoked renders" />
     <MESSAGE value="Add getting all restaurants fetch" />
     <MESSAGE value="Fix nebuChanger" />
     <MESSAGE value="Fix warnings" />
@@ -507,6 +520,7 @@
     <MESSAGE value="Fix login" />
     <MESSAGE value="Add login in user panel" />
     <MESSAGE value="Add maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add maps" />
+    <MESSAGE value="Fix fetching images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix fetching images" />
   </component>
 </project>

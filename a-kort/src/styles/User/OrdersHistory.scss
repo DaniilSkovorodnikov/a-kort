@@ -1,0 +1,68 @@
+.user-orders{
+  &__list{
+    width: 55%;
+    margin: 65px auto 0;
+  }
+
+  &__order-header{
+    margin-bottom: 70px;
+  }
+
+  &__item{
+    padding: 35px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  &__date{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 3px;
+  }
+
+  &__info{
+    display: flex;
+    gap: 20px;
+  }
+
+  &__status{
+    text-align: center;
+    vertical-align: center;
+    padding: 0 3px;
+    background-color: #D62727;
+    border-radius: 15px;
+    color: white;
+    width: 85px;
+    height: 25px;
+  }
+
+  &__number{
+    position: absolute;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #717171;
+    right: 32px;
+    top: 39px;
+  }
+
+  &__dishes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 35px;
+  }
+
+  &__dish{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+}

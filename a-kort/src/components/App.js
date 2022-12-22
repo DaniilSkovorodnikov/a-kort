@@ -10,8 +10,6 @@ import Registration from "./Registration";
 export default function App() {
     return (
         <div className="App">
-            {/*<Link to="user">Пользовательская сторона</Link>*/}
-            {/*<Link to="admin">Админка</Link>*/}
             <Routes>
                 <Route path="/" element={<Login/>}/>
                 <Route path="/registration" element={<Registration/>}/>

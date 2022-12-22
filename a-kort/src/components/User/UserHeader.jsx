@@ -1,7 +1,16 @@
 import logo from "../../img/user-logo.svg"
 import {Link} from "react-router-dom";
+import ProfileBurger from "./ProfileBurger";
+import {useState} from "react";
 
 export default function UserHeader({children}){
+    const [visible, setVisible] = useState(false)
+    const classes = ["user-header__login"]
+    const [active, setActive] = useState(false)
+
+    if (active){
+        classes.push("active")
+    }
     return (<div className="user-header">
         <div className="user-header__left">
             <Link to="/user"><img src={logo} alt="" /></Link>
@@ -9,9 +18,13 @@ export default function UserHeader({children}){
             {children}
         </div>
         <div className="user-header__buttons">
-            <button className="user-header__theme"></button>
-            <button className="user-header__profile"></button>
-            <p className="user-header__login">{sessionStorage.getItem('login')}</p>
+            <div className={classes.join(' ')} onClick={() => {
+                setVisible(true)
+                setActive(true)
+            }}>
+                {sessionStorage.getItem('login')}
+                <ProfileBurger visible={visible}/>
+            </div>
         </div>
     </div>);
 }

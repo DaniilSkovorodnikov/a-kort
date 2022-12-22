@@ -23,6 +23,7 @@
 
   &__buttons{
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: space-around;
     width: 10%;
@@ -37,11 +38,36 @@
     background-color: transparent;
   }
 
-  &__profile{
-    background-image: url("../../img/profile-btn.svg");
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 30px;
-    background-color: transparent;
+  &__login{
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &.active{
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      padding: 30px;
+    }
+  }
+}
+
+.burger{
+  display: none;
+
+  &__list{
+    width: 150px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+  }
+
+  &__item{
+    font-weight: 400;
+  }
+
+  &.visible{
+    display: block;
   }
 }

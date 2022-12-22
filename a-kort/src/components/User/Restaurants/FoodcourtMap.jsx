@@ -61,7 +61,6 @@ export default function FoodcourtMap({positions, setCurrentFoodcourt, setVisible
                     </li>
                 )}
             </ul>
-
         </div>
         <p className="map__distance">Расстояние до фудкорта ({nearest.name}): {nearest.distance} км</p>
         <button className="map__apply" onClick={() => {
