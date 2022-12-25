@@ -35,7 +35,9 @@ export default function FoodcourtRestaurants(){
     const [visible, setVisible] = useState(true)
 
     return(<div>
-        <Modal visible={visible} setVisible={setVisible}>
+        <Modal visible={visible} setVisible={() => {
+            setVisible(false)
+        }}>
             <div className="map" onClick={(event) => event.stopPropagation()}>
                 <h2 className="map__title">Выберите фудкорт</h2>
                 <div className="map__changer">

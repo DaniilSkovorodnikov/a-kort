@@ -53,7 +53,7 @@ export default function Category({name, id, dishes, restaurantName, restaurantLo
                     {categoryDishes.map((v, i) => <li className="current-dishes__item" key={i}>
                         <p>{i + 1}. {v.dish_name}</p>
                         <button onClick={() => {
-                            fetch(`http://127.0.0.1:8000/delete_dish/?name=${v.dish_name}`)
+                            fetch(`http://26.87.4.182:8000/delete_dish/?name=${v.dish_name}`)
                                 .then((res) => res.json())
                                 .then((e) => console.log(e))
                                 .catch((err) => console.log(err))

@@ -82,7 +82,9 @@
   }
 
   &__dishes{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    align-items: stretch;
     gap: 30px;
     margin-top: 27px;
     flex-wrap: wrap;
@@ -169,7 +171,6 @@
 
 .admin-dish{
   width: 265px;
-  height: 240px;
   box-sizing: border-box;
   background-color: white;
   display: flex;

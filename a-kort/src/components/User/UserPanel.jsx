@@ -9,7 +9,6 @@ export const CartContext = createContext()
 
 export default function UserPanel(){
     const [cartSum, setCartSum] = useState(0)
-
     return (
         <CartContext.Provider value={{cartSum, setCartSum}}>
             <Routes>

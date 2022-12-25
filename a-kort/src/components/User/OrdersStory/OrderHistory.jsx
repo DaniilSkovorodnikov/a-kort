@@ -13,14 +13,20 @@ export default function OrderHistory(){
     const [orders, setOrders] = useState([])
     useEffect(() => {
         getOrders(sessionStorage.getItem('login'))
-            .then((res) => console.log(res))
+            .then((res) => setOrders([...res]))
     }, [])
 
     return (
         <div className="user-orders">
             <UserHeader/>
             <ul className={"user-orders__list"}>
-                <Order/>
+                {orders.map((v,i) => <Order date={v.date}
+                                                    location={v.location}
+                                                    number={v.number}
+                                                    dishes={v.dishes}
+                                                    totalPrice={v.price}
+                                                    key={i}/>)
+                }
             </ul>
         </div>
     )
