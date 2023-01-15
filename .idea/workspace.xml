@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add possibility log in as admin">
-      <change beforePath="$PROJECT_DIR$/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add new urls for fetch">
+      <change afterPath="$PROJECT_DIR$/_redirects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,14 +134,7 @@
       <workItem from="1671971571392" duration="2704000" />
       <workItem from="1671976124824" duration="28000" />
       <workItem from="1672078182230" duration="33000" />
-      <workItem from="1673797257910" duration="13239000" />
-    </task>
-    <task id="LOCAL-00058" summary="Fix warnings">
-      <created>1669030548414</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1669030548414</updated>
+      <workItem from="1673797257910" duration="14486000" />
     </task>
     <task id="LOCAL-00059" summary="Fix menuChanger">
       <created>1669030703669</created>
@@ -479,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673814273498</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Add new urls for fetch">
+      <created>1673814770093</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1673814770093</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change menu header styles" />
     <MESSAGE value="Add foodcourt functional" />
     <MESSAGE value="Add img on restaurants" />
     <MESSAGE value="Fix restaurant styles" />
@@ -522,6 +521,7 @@
     <MESSAGE value="Add new functional" />
     <MESSAGE value="Fix button thats open foodcourt list" />
     <MESSAGE value="Add possibility log in as admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add possibility log in as admin" />
+    <MESSAGE value="Add new urls for fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new urls for fetch" />
   </component>
 </project>
