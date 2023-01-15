@@ -12,6 +12,6 @@ force = true
 
 [[redirects]]
 from = "http://www.a-kort.com/*"
-to = "https://www.a-kort.com/:splat"
+to = "http://a-kort.netlify.app/:splat"
 status = 301
 force = true
