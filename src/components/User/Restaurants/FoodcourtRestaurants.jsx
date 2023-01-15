@@ -51,7 +51,10 @@ export default function FoodcourtRestaurants(){
             </div>
         </Modal> : <div/>}
         <UserHeader toFilter={restaurants} setFiltered={setFiltered} isFilterDishes={false}>
-            <button className="user-header__change-foodcourt" onClick={() => setFoodcourt("")}>Выбрать фудкорт</button>
+            <button className="user-header__change-foodcourt" onClick={() => {
+                setFoodcourt("")
+                setVisible(true)
+            }}>Выбрать фудкорт</button>
         </UserHeader>
         <ul className="restaurants">
             {filtered.map((v, i) => <UserRestaurant name={v.name}

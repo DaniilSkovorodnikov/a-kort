@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Change structure">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add new functional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Orders/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Orders/Order.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/OrdersStory/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/OrdersStory/Order.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/OrdersStory/OrderHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/OrdersStory/OrderHistory.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/ProfileBurger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/ProfileBurger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/UserHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/User/OrdersHistory.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/OrdersHistory.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/User/UserHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/UserHeader.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,14 +133,7 @@
       <workItem from="1671971571392" duration="2704000" />
       <workItem from="1671976124824" duration="28000" />
       <workItem from="1672078182230" duration="33000" />
-      <workItem from="1673797257910" duration="11547000" />
-    </task>
-    <task id="LOCAL-00055" summary="Fix fetch">
-      <created>1668521983374</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1668521983374</updated>
+      <workItem from="1673797257910" duration="12623000" />
     </task>
     <task id="LOCAL-00056" summary="Add getting all restaurants fetch">
       <created>1668522582900</created>
@@ -486,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673806670192</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Add new functional">
+      <created>1673812711541</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1673812711541</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix warnings" />
     <MESSAGE value="Fix menuChanger" />
     <MESSAGE value="Change restaurant styles" />
     <MESSAGE value="Change menu header styles" />
@@ -529,6 +520,7 @@
     <MESSAGE value="Add orders for user" />
     <MESSAGE value="Fix styles" />
     <MESSAGE value="Change structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change structure" />
+    <MESSAGE value="Add new functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new functional" />
   </component>
 </project>
