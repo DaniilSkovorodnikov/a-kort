@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add new urls for fetch">
-      <change afterPath="$PROJECT_DIR$/_redirects" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add _redirects">
+      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_redirects" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,14 +134,7 @@
       <workItem from="1671971571392" duration="2704000" />
       <workItem from="1671976124824" duration="28000" />
       <workItem from="1672078182230" duration="33000" />
-      <workItem from="1673797257910" duration="14486000" />
-    </task>
-    <task id="LOCAL-00059" summary="Fix menuChanger">
-      <created>1669030703669</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1669030703669</updated>
+      <workItem from="1673797257910" duration="14814000" />
     </task>
     <task id="LOCAL-00060" summary="Fix menuChanger">
       <created>1669031059027</created>
@@ -479,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673814770093</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Add _redirects">
+      <created>1673815809631</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1673815809631</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add foodcourt functional" />
     <MESSAGE value="Add img on restaurants" />
     <MESSAGE value="Fix restaurant styles" />
     <MESSAGE value="Add user menu, modal dishes and cart" />
@@ -522,6 +521,7 @@
     <MESSAGE value="Fix button thats open foodcourt list" />
     <MESSAGE value="Add possibility log in as admin" />
     <MESSAGE value="Add new urls for fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new urls for fetch" />
+    <MESSAGE value="Add _redirects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add _redirects" />
   </component>
 </project>
