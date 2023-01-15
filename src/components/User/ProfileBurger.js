@@ -12,7 +12,10 @@ export default function ProfileBurger({visible}){
             <ul className="burger__list">
                 <li className="burger__item">Профиль</li>
                 <li className="burger__item" onClick={() => redirect('/user/orders')}>История заказов</li>
-                <li className="burger__item">Выйти</li>
+                <li className="burger__item" onClick={() => {
+                    sessionStorage.clear()
+                    redirect('/')
+                }}>Выйти</li>
             </ul>
         </div>
     )

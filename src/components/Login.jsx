@@ -49,7 +49,7 @@ export default function Login(){
             <Link to="/registration" className="login__registration">Ещё нет аккаунта? Зарегистрируйтесь.</Link>
         </div>
         <button className="login__submit-other" onClick={() => {
-            sessionStorage.setItem('login', "")
+            sessionStorage.setItem('login', "unregistred")
             navigate("/user")
         }}>
             Войти без регистрации

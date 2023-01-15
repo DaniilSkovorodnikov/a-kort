@@ -3,7 +3,12 @@ export default function Order({id, dishes}){
         <div className="order">
             <div className="order__header">
                 <h3 className="order__id">Заказ №{id}</h3>
-                <button className="order__btn">Отметить готовым</button>
+                <button className="order__btn" onClick={() => {
+                    fetch(`http://26.87.4.182:8000/make_order_completed/?id=${id}`)
+                        .then((res) => res.json())
+                        .then((res => console.log(res)))
+                        .catch((err) => console.log(err))
+                }}>Отметить готовым</button>
             </div>
             <ul className="order__dishes">
                 {dishes.map((v,i) =>

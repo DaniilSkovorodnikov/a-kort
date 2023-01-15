@@ -6,6 +6,7 @@ import {useEffect, useState} from "react";
 async function getOrders(login){
     const data = await fetch(`http://26.87.4.182:8000/get_orders_by_user/?login=${login}`);
     const res = await data.json();
+    console.log(await res);
     return res;
 }
 
@@ -25,6 +26,7 @@ export default function OrderHistory(){
                                                     number={v.number}
                                                     dishes={v.dishes}
                                                     totalPrice={v.price}
+                                                    status={v.status}
                                                     key={i}/>)
                 }
             </ul>

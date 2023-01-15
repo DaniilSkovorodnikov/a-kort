@@ -37,6 +37,10 @@
     color: white;
     width: 85px;
     height: 25px;
+
+    &.completed{
+      background-color: #32cd32;
+    }
   }
 
   &__number{

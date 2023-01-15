@@ -11,10 +11,14 @@
     align-items: center;
   }
 
+  &__logo{
+    margin-bottom: auto;
+  }
+
   &__search{
     box-sizing: border-box;
     flex: 1 0 auto;
-    margin: 0 45px 0 40px;
+    margin: 0 45px auto 40px;
     height: 40px;
     border-radius: 10px;
     border: none;
@@ -57,6 +61,7 @@
     background-color: #d62727;
     color: white;
     border-radius: 20px;
+    margin-bottom: auto;
   }
 }
 

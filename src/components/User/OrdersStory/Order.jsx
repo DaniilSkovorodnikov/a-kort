@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export default function Order({date, location, number, dishes, totalPrice}){
+export default function Order({date, location, number, dishes, totalPrice, status}){
     const [restaurants, setRestaurants] = useState([])
     function getRestaurants(dishes){
         for (const dish of dishes){
@@ -9,8 +9,12 @@ export default function Order({date, location, number, dishes, totalPrice}){
             }
         }
     }
-
     getRestaurants(dishes)
+
+    const classes = ["user-orders__status"]
+    if (status === "completed"){
+        classes.push("completed")
+    }
     return (
         <li className="user-orders__item">
             <div className="user-orders__order">
@@ -18,7 +22,7 @@ export default function Order({date, location, number, dishes, totalPrice}){
                     <h2 className="user-orders__date">{date}</h2>
                     <div className="user-orders__info">
                         <p className="user-orders__location">{location}</p>
-                        <p className="user-orders__status">Готовится</p>
+                        <p className={classes.join(' ')}>{status === 'completed' ? <span>Готов</span> : <span>Готовится</span>}</p>
                     </div>
                     <div className="user-orders__number">Номер вашего заказа № {number}</div>
                 </div>
