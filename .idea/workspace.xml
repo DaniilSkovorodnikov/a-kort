@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add new functional">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix button thats open foodcourt list">
+      <change beforePath="$PROJECT_DIR$/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,14 +133,7 @@
       <workItem from="1671971571392" duration="2704000" />
       <workItem from="1671976124824" duration="28000" />
       <workItem from="1672078182230" duration="33000" />
-      <workItem from="1673797257910" duration="12623000" />
-    </task>
-    <task id="LOCAL-00056" summary="Add getting all restaurants fetch">
-      <created>1668522582900</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1668522582901</updated>
+      <workItem from="1673797257910" duration="12931000" />
     </task>
     <task id="LOCAL-00057" summary="Fix nebuChanger">
       <created>1669030498662</created>
@@ -478,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673812711541</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Fix button thats open foodcourt list">
+      <created>1673814038341</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1673814038341</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix menuChanger" />
     <MESSAGE value="Change restaurant styles" />
     <MESSAGE value="Change menu header styles" />
     <MESSAGE value="Add foodcourt functional" />
@@ -521,6 +520,7 @@
     <MESSAGE value="Fix styles" />
     <MESSAGE value="Change structure" />
     <MESSAGE value="Add new functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new functional" />
+    <MESSAGE value="Fix button thats open foodcourt list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix button thats open foodcourt list" />
   </component>
 </project>
