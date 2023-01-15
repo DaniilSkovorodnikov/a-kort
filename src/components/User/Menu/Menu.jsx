@@ -17,6 +17,7 @@ export default function Menu(){
         const setData = (categories, dishes) =>{
             setCategories(categories);
             setDishesInCategory(dishes);
+            setFiltered(dishes)
         }
         getDishes(currentRestaurant.name, currentRestaurant.location).then((v) => setData(v[0], v[1]))
     }, [])
@@ -24,6 +25,7 @@ export default function Menu(){
     const [dishesInCategory, setDishesInCategory] = useState([])
     const [categories, setCategories] = useState([])
     const [currentCategory, setCurrentCategory] = useState(-1)
+    const [filtered, setFiltered] = useState([])
 
     const [cartDishesStack, setCartDishesStack] = useState([])
     const {cartSum, setCartSum} = useContext(CartContext)
@@ -73,7 +75,6 @@ export default function Menu(){
     function sendOrder(){
         const order = JSON.parse(sessionStorage.getItem('cart'));
         order.login = sessionStorage.getItem('login')
-        console.log(order);
         fetch("http://26.87.4.182:8000/create_order/", {
             headers: {
                 "Content-Type": "application/json",
@@ -99,7 +100,7 @@ export default function Menu(){
                         <button className="success__exit" onClick={() => setVisible(false)}>Закрыть</button>
                     </div>
                 </Modal>
-                <UserHeader>
+                <UserHeader toFilter={dishesInCategory} setFiltered={setFiltered} isFilterDishes={true}>
                     <p className="user-header__location">{`${currentRestaurant.name}, ${currentRestaurant.location}`}</p>
                 </UserHeader>
                 <div className="user-menu">
@@ -123,7 +124,7 @@ export default function Menu(){
                         <ul className="dishes">
                             {
                                 currentCategory === -1 ?
-                                    dishesInCategory.map((v) => v.map((dish, i) => <Dish
+                                    filtered.map((v) => v.map((dish, i) => <Dish
                                                                                       name={dish.dish_name}
                                                                                       price={dish.dish_price}
                                                                                       photo={dish.dish_image}
@@ -133,7 +134,7 @@ export default function Menu(){
                                                                                       addInCart={addInCart}
                                                                                       key={i}
                                     />)):
-                                    dishesInCategory[currentCategory].map((dish, i) => <Dish
+                                    filtered[currentCategory].map((dish, i) => <Dish
                                                                                        name={dish.dish_name}
                                                                                        price={dish.dish_price}
                                                                                        photo={dish.dish_image}

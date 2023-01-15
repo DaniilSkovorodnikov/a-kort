@@ -56,7 +56,9 @@ export default function FoodcourtMap({positions, setCurrentFoodcourt, setVisible
                     <li className="map__item" key={i}>
                         <p>{v.name}</p>
                         <button className="map__change" onClick={() => {
-                            setNearest(foodcourts.find((pos) => pos.name === v.name))
+                            const foodcourt = foodcourts.find((pos) => pos.name === v.name)
+                            setNearest(foodcourt)
+                            sessionStorage.setItem('currentFoodcourt', v.name)
                         }}>Выбрать</button>
                     </li>
                 )}

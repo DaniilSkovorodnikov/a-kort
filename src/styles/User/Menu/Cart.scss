@@ -81,14 +81,19 @@
 .cart-dish{
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  gap: 70px;
 
   &__right{
     display: flex;
   }
 
+  &__name{
+    width: 40%;
+  }
+
   &__count-changer{
     width: 75px;
+    height: 20px;
     display: flex;
     margin-right: 10px;
     border: 1px solid #717171;

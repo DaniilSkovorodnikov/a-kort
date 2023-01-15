@@ -4,18 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Add orders for user">
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Change structure">
+      <change afterPath="$PROJECT_DIR$/.idea/a-kort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/User/OrdersStory/Order.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/Order.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/OrderHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/OrderHistory.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Admin/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/Admin/MenuChanger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Cart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/OrdersHistory.scss" beforeDir="false" afterPath="$PROJECT_DIR$/a-kort/src/styles/User/OrdersHistory.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AdminHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/MenuHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AdminMenu/MenuHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminMenu/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AdminMenu/Modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/AdminPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AdminPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/AdminDish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MenuChanger/AdminDish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MenuChanger/Category.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MenuChanger/MenuChanger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MenuChanger/MenuChanger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/AdminRestaurant.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MyRestaurants/AdminRestaurant.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/MyRestaurants/AdminRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MyRestaurants/AdminRestaurants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Orders/Order.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Admin/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Orders/Orders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartDish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Cart/CartDish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Cart/CartRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Cart/CartRestaurants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/CategoryButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Menu/CategoryButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Menu/Dish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/Order.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/OrdersStory/OrderHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/OrdersStory/OrderHistory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/ProfileBurger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/ProfileBurger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/Restaurants/UserRestaurant.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Restaurants/UserRestaurant.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/components/User/UserPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/img/admin-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/admin-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/img/big-smartphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/big-smartphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/img/hero-background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/hero-background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/img/profile-btn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/profile-btn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/img/rating-star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/rating-star.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/img/theme-btn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/theme-btn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/img/user-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/user-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Admin/AdminHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Admin/AdminHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Admin/MenuChanger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Admin/MenuChanger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Admin/MyRestaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Admin/MyRestaurants.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Admin/Orders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Admin/Orders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/Modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/Menu/Cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/Menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/OrdersHistory.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/OrdersHistory.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/Restaurants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/Restaurants.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-kort/src/styles/User/UserHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/UserHeader.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +99,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/WebstormProjects/a-kort",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\a-kort\a-kort\src\img" />
@@ -139,13 +198,9 @@
       <workItem from="1671884662071" duration="6000" />
       <workItem from="1671962633065" duration="16000" />
       <workItem from="1671971571392" duration="2704000" />
-    </task>
-    <task id="LOCAL-00053" summary="Fix fetch">
-      <created>1668521135303</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1668521135303</updated>
+      <workItem from="1671976124824" duration="28000" />
+      <workItem from="1672078182230" duration="33000" />
+      <workItem from="1673797257910" duration="6169000" />
     </task>
     <task id="LOCAL-00054" summary="Fix fetch">
       <created>1668521247008</created>
@@ -483,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671702767769</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Fix styles">
+      <created>1671976139807</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1671976139807</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +563,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix nebuChanger" />
     <MESSAGE value="Fix warnings" />
     <MESSAGE value="Fix menuChanger" />
     <MESSAGE value="Change restaurant styles" />
@@ -516,7 +577,6 @@
     <MESSAGE value="Add sending order" />
     <MESSAGE value="Add getting order" />
     <MESSAGE value="Fix fetch" />
-    <MESSAGE value="Fix styles" />
     <MESSAGE value="Add orders for admin" />
     <MESSAGE value="Add new cart" />
     <MESSAGE value="Add a login and registration" />
@@ -526,6 +586,8 @@
     <MESSAGE value="Add maps" />
     <MESSAGE value="Fix fetching images" />
     <MESSAGE value="Add orders for user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add orders for user" />
+    <MESSAGE value="Fix styles" />
+    <MESSAGE value="Change structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change structure" />
   </component>
 </project>

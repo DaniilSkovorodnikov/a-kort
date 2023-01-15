@@ -20,6 +20,7 @@ async function getFoodcourts(){
 export default function FoodcourtRestaurants(){
     const [foodcourt, setFoodcourt] = useState(sessionStorage.getItem("currentFoodcourt"));
     const [restaurants, setRestaurants] = useState([]);
+    const [filtered, setFiltered] = useState([]);
     const [foodcourts, setFoodcourts] = useState([]);
     useEffect(() => {
         getFoodcourts().then((res) => {
@@ -29,37 +30,31 @@ export default function FoodcourtRestaurants(){
 
     useEffect(() => {
         getRestaurants(foodcourt)
-            .then((v) => setRestaurants([...v]))
+            .then((v) => {
+                setRestaurants([...v])
+                setFiltered([...v])
+            })
     }, [foodcourt])
 
     const [visible, setVisible] = useState(true)
 
     return(<div>
+        {!foodcourt ?
         <Modal visible={visible} setVisible={() => {
             setVisible(false)
         }}>
             <div className="map" onClick={(event) => event.stopPropagation()}>
                 <h2 className="map__title">Выберите фудкорт</h2>
                 <div className="map__changer">
-                    {foodcourts.length > 0 ? <FoodcourtMap positions={foodcourts} setCurrentFoodcourt={setFoodcourt} setVisible={setVisible}/> : <div/>}
+                    { foodcourts.length > 0 ? <FoodcourtMap positions={foodcourts} setCurrentFoodcourt={setFoodcourt} setVisible={setVisible}/> : <div/>}
                 </div>
             </div>
-        </Modal>
-        <UserHeader>
-            <select
-                className="restaurant-adder__location"
-                onChange={(e) => {
-                    setFoodcourt(e.target.value);
-                    sessionStorage.setItem("currentFoodcourt", e.target.value);
-                }}
-                defaultValue={foodcourt}
-            >
-                <option hidden value="">Адрес</option>
-                {foodcourts.map((v,i) => <option key={i}>{v.name}</option>)}
-            </select>
+        </Modal> : <div/>}
+        <UserHeader toFilter={restaurants} setFiltered={setFiltered} isFilterDishes={false}>
+            <button className="user-header__change-foodcourt" onClick={() => setFoodcourt("")}>Выбрать фудкорт</button>
         </UserHeader>
         <ul className="restaurants">
-            {restaurants.map((v, i) => <UserRestaurant name={v.name}
+            {filtered.map((v, i) => <UserRestaurant name={v.name}
                                                     rating={v.rating}
                                                     location={v.location}
                                                     photo={`http://26.87.4.182:8000/get_image/?image=${v.img}`}
