@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Test fetch to https client">
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/MenuChanger/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MenuChanger/Category.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/MenuChanger/MenuChanger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MenuChanger/MenuChanger.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/MyRestaurants/AdminRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/MyRestaurants/AdminRestaurants.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Orders/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Orders/Order.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Orders/Orders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/OrdersStory/OrderHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/OrdersStory/OrderHistory.jsx" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix one more link">
+      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,21 +137,7 @@
       <workItem from="1672078182230" duration="33000" />
       <workItem from="1673797257910" duration="15685000" />
       <workItem from="1673820156053" duration="24000" />
-      <workItem from="1673820206131" duration="317000" />
-    </task>
-    <task id="LOCAL-00063" summary="Change restaurant styles">
-      <created>1669031897975</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1669031897975</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Change menu header styles">
-      <created>1669032196514</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1669032196514</updated>
+      <workItem from="1673820206131" duration="1154000" />
     </task>
     <task id="LOCAL-00065" summary="Add foodcourt functional">
       <created>1669036174860</created>
@@ -488,7 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673820292529</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Change all links for fetch">
+      <created>1673820543340</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1673820543340</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Fix one more link">
+      <created>1673820670950</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1673820670950</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,8 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Delete mok's" />
-    <MESSAGE value="Add dish description" />
     <MESSAGE value="Fix dish description" />
     <MESSAGE value="Add sending order" />
     <MESSAGE value="Add getting order" />
@@ -531,6 +523,8 @@
     <MESSAGE value="Add netlify.toml" />
     <MESSAGE value="Delete netlify.toml" />
     <MESSAGE value="Test fetch to https client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test fetch to https client" />
+    <MESSAGE value="Change all links for fetch" />
+    <MESSAGE value="Fix one more link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix one more link" />
   </component>
 </project>

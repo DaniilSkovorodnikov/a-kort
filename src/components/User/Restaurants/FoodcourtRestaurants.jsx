@@ -57,12 +57,15 @@ export default function FoodcourtRestaurants(){
             }}>Выбрать фудкорт</button>
         </UserHeader>
         <ul className="restaurants">
-            {filtered.map((v, i) => <UserRestaurant name={v.name}
-                                                    rating={v.rating}
-                                                    location={v.location}
-                                                    photo={`https://web-production-c5b9.up.railway.app/get_image/?image=${v.img}`}
-                                                    key={i}
-            />)}
+            {filtered.map((v, i) => {
+               console.log(v.img)
+               return <UserRestaurant name={v.name}
+                                rating={v.rating}
+                                location={v.location}
+                                photo={`https://web-production-c5b9.up.railway.app/get_image/?image=${v.img}`}
+                                key={i}
+                />
+            })}
         </ul>
     </div>);
 }
