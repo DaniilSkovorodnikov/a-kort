@@ -1,5 +1,3 @@
-import {useState} from "react";
-
 export default function CategoryButton({category, setCurrentCategory, categoryIndex, currentCategoryIdx}){
     const classes = ["categories__btn"]
     if(categoryIndex === currentCategoryIdx){

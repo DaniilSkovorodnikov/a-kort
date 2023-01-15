@@ -60,7 +60,7 @@ export default function FoodcourtRestaurants(){
             {filtered.map((v, i) => <UserRestaurant name={v.name}
                                                     rating={v.rating}
                                                     location={v.location}
-                                                    photo={`http://simizzzz.pythonanywhere.com/get_image/?image=${v.img}`}
+                                                    photo={`https://web-production-c5b9.up.railway.app/get_image/?image=${v.img}`}
                                                     key={i}
             />)}
         </ul>
