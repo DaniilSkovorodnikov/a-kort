@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 import Modal from "../AdminMenu/Modal";
 
 async function getRestaurants(){
-    const data = await fetch(`http://26.87.4.182:8000/get_all_restaurants`);
+    const data = await fetch(`http://simizzzz.pythonanywhere.com/get_all_restaurants`);
     const res = await data.json();
     return [...res["restaurants"]]
 }
@@ -39,7 +39,7 @@ export default function AdminRestaurants(){
             description,
             img
         }
-        fetch("http://26.87.4.182:8000/create_restaurant/",{
+        fetch("http://simizzzz.pythonanywhere.com/create_restaurant/",{
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",

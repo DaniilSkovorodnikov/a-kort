@@ -10,7 +10,7 @@ export default function Registration(){
     const navigate = useNavigate();
 
     async function registration(){
-        const res = await fetch("http://26.87.4.182:8000/register_user/", {
+        const res = await fetch("http://simizzzz.pythonanywhere.com/register_user/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",

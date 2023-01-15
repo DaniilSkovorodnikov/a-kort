@@ -6,13 +6,13 @@ import Modal from "../../Admin/AdminMenu/Modal";
 import FoodcourtMap from "./FoodcourtMap";
 
 async function getRestaurants(foodcourtName) {
-    const data = await fetch(`http://26.87.4.182:8000/get_foodcourt_restaurants/?name=${foodcourtName}`);
+    const data = await fetch(`http://simizzzz.pythonanywhere.com/get_foodcourt_restaurants/?name=${foodcourtName}`);
     const res = await data.json();
     return [...res["restaurants"]]
 }
 
 async function getFoodcourts(){
-    const data = await fetch("http://26.87.4.182:8000/get_foodcourts/");
+    const data = await fetch("http://simizzzz.pythonanywhere.com/get_foodcourts/");
     const res = await data.json();
     return [...res["foodcourts"]]
 }
@@ -60,7 +60,7 @@ export default function FoodcourtRestaurants(){
             {filtered.map((v, i) => <UserRestaurant name={v.name}
                                                     rating={v.rating}
                                                     location={v.location}
-                                                    photo={`http://26.87.4.182:8000/get_image/?image=${v.img}`}
+                                                    photo={`http://simizzzz.pythonanywhere.com/get_image/?image=${v.img}`}
                                                     key={i}
             />)}
         </ul>

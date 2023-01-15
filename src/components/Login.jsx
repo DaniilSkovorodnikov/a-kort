@@ -12,7 +12,7 @@ export default function Login(){
     const [classes, setClasses] = useState(["login__error"]);
 
     async function doLogin(){
-        const res = await fetch("http://26.87.4.182:8000/auth_user/", {
+        const res = await fetch("http://simizzzz.pythonanywhere.com/auth_user/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",

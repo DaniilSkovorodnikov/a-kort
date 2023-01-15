@@ -8,11 +8,11 @@ import MenuHeader from "../AdminMenu/MenuHeader";
 export async function getDishes(name, location){
     const initialCategories = [];
     const initialDishes = [];
-    const data = await fetch(`http://26.87.4.182:8000/get_restaurant_dishes/?name=${name}&address=${location}`)
+    const data = await fetch(`http://simizzzz.pythonanywhere.com/get_restaurant_dishes/?name=${name}&address=${location}`)
     const res = await data.json();
     for (const dish of res["dishes"]){
         if(dish.dish_image !== ''){
-            dish.dish_image = `http://26.87.4.182:8000/get_image/?image=${dish.dish_image}`
+            dish.dish_image = `http://simizzzz.pythonanywhere.com/get_image/?image=${dish.dish_image}`
         }
         let indexOfCategory = initialCategories.indexOf(dish.dish_category);
         if(indexOfCategory === -1)
