@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix one more link">
-      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+    <list default="true" id="1d4695f1-7277-4c4b-a505-7b04ffffa062" name="Changes" comment="Fix refresh 404">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtMap.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtRestaurants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Restaurants/FoodcourtRestaurants.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,14 +137,8 @@
       <workItem from="1672078182230" duration="33000" />
       <workItem from="1673797257910" duration="15685000" />
       <workItem from="1673820156053" duration="24000" />
-      <workItem from="1673820206131" duration="1154000" />
-    </task>
-    <task id="LOCAL-00065" summary="Add foodcourt functional">
-      <created>1669036174860</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1669036174860</updated>
+      <workItem from="1673820206131" duration="1297000" />
+      <workItem from="1673821548090" duration="1013000" />
     </task>
     <task id="LOCAL-00066" summary="Add img on restaurants">
       <created>1669036958920</created>
@@ -482,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673820670950</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Fix refresh 404">
+      <created>1673821422209</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1673821422209</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +501,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix dish description" />
     <MESSAGE value="Add sending order" />
     <MESSAGE value="Add getting order" />
     <MESSAGE value="Fix fetch" />
@@ -525,6 +525,7 @@
     <MESSAGE value="Test fetch to https client" />
     <MESSAGE value="Change all links for fetch" />
     <MESSAGE value="Fix one more link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix one more link" />
+    <MESSAGE value="Fix refresh 404" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix refresh 404" />
   </component>
 </project>

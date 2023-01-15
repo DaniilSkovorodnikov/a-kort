@@ -58,7 +58,6 @@ export default function FoodcourtRestaurants(){
         </UserHeader>
         <ul className="restaurants">
             {filtered.map((v, i) => {
-               console.log(v.img)
                return <UserRestaurant name={v.name}
                                 rating={v.rating}
                                 location={v.location}

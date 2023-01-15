@@ -31,7 +31,6 @@ export default function FoodcourtMap({positions, setCurrentFoodcourt, setVisible
             setFoodcourts(foodcourts);
             let minDistance = 10000000000;
             let nearestFoodcourt = {}
-            console.log(foodcourts);
             for (const foodcourt of foodcourts){
                 if(foodcourt.distance < minDistance){
                     minDistance = foodcourt.distance

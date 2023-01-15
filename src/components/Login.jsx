@@ -54,11 +54,6 @@ export default function Login(){
         }}>
             Войти без регистрации
         </button>
-        <button className="login__submit-other" onClick={() => {
-            navigate("/admin")
-        }}>
-            Войти как админ
-        </button>
         <section className="login__hero">
             <img src={smartphone} alt="" className="login__smartphone"/>
             <div className="login__hero-right">
