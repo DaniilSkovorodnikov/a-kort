@@ -4,7 +4,7 @@ import Order from "./Order";
 import {useEffect, useState} from "react";
 
 async function getOrders(login){
-    const data = await fetch(`http://simizzzz.pythonanywhere.com/get_orders_by_user/?login=${login}`);
+    const data = await fetch(`https://web-production-c5b9.up.railway.app/get_orders_by_user/?login=${login}`);
     const res = await data.json();
     console.log(await res);
     return res;

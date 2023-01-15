@@ -10,7 +10,7 @@ export default function Registration(){
     const navigate = useNavigate();
 
     async function registration(){
-        const res = await fetch("http://simizzzz.pythonanywhere.com/register_user/", {
+        const res = await fetch("https://web-production-c5b9.up.railway.app/register_user/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",

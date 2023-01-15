@@ -32,7 +32,7 @@ export default function Category({name, id, dishes, restaurantName, restaurantLo
             restaurant_name: restaurantName,
             restaurant_location: restaurantLocation
         }
-        fetch("http://simizzzz.pythonanywhere.com/add_dish/", {
+        fetch("https://web-production-c5b9.up.railway.app/add_dish/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
@@ -53,7 +53,7 @@ export default function Category({name, id, dishes, restaurantName, restaurantLo
                     {categoryDishes.map((v, i) => <li className="current-dishes__item" key={i}>
                         <p>{i + 1}. {v.dish_name}</p>
                         <button onClick={() => {
-                            fetch(`http://simizzzz.pythonanywhere.com/delete_dish/?name=${v.dish_name}`)
+                            fetch(`https://web-production-c5b9.up.railway.app/delete_dish/?name=${v.dish_name}`)
                                 .then((res) => res.json())
                                 .then((e) => console.log(e))
                                 .catch((err) => console.log(err))

@@ -6,13 +6,13 @@ import Modal from "../../Admin/AdminMenu/Modal";
 import FoodcourtMap from "./FoodcourtMap";
 
 async function getRestaurants(foodcourtName) {
-    const data = await fetch(`http://simizzzz.pythonanywhere.com/get_foodcourt_restaurants/?name=${foodcourtName}`);
+    const data = await fetch(`https://web-production-c5b9.up.railway.app/get_foodcourt_restaurants/?name=${foodcourtName}`);
     const res = await data.json();
     return [...res["restaurants"]]
 }
 
 async function getFoodcourts(){
-    const data = await fetch("http://simizzzz.pythonanywhere.com/get_foodcourts/");
+    const data = await fetch("https://web-production-c5b9.up.railway.app/get_foodcourts/");
     const res = await data.json();
     return [...res["foodcourts"]]
 }

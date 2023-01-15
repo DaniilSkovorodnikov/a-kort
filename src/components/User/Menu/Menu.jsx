@@ -75,7 +75,7 @@ export default function Menu(){
     function sendOrder(){
         const order = JSON.parse(sessionStorage.getItem('cart'));
         order.login = sessionStorage.getItem('login')
-        fetch("http://simizzzz.pythonanywhere.com/create_order/", {
+        fetch("https://web-production-c5b9.up.railway.app/create_order/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
