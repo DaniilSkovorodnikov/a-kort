@@ -12,7 +12,7 @@ export default function Login(){
     const [classes, setClasses] = useState(["login__error"]);
 
     async function doLogin(){
-        const res = await fetch("http://simizzzz.pythonanywhere.com/auth_user/", {
+        const res = await fetch("https://web-production-c5b9.up.railway.app/auth_user/", {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
